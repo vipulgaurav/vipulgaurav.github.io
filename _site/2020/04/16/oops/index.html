@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <link rel="stylesheet" href="/assets/css/normalize.css"/>
+  <link rel="stylesheet" href="/assets/css/bulma.css"/>
+  <link rel="stylesheet" href="/assets/css/custom.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/syntax.css" type="text/css">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <title>
+    
+      Object Oriented Programming using Python &middot; theCreativeDecoder("Rise and Shine @MyBlog")
+    
+  </title>
+
+</head>
+
+
+<body>
+
+<section class="hero is-dark">
+  <div class="hero-body">
+    <div class="container">
+        <h1 class="title">
+          <span class="typewrite" data-period="2000" data-type='[ "Konichiwa!", "I am Vipul", "Autodidact Programmer",
+           "I drink and automate things", "Dattebayo!"]'>
+            <span class="wrap"></span>
+          </span>
+        </h1>
+      <h4 class="subtitle" id="quote">
+      </h4>
+    </div>
+  </div>
+</section>
+
+<div class="main-container">
+  <div class="tile is-ancestor is-vertical">
+
+
+    <nav class="nav has-shadow">
+
+      <div class="nav-left">
+
+        <a href="/" class="nav-item">
+          <span class="icon">
+            <i class="fa fa-home" aria-hidden="true" title="Homepage"></i>
+          </span>
+        </a>
+
+        <a href="https://github.com/vgaurav3011" target="_blank" class="nav-item">
+          <span class="icon">
+            <i class="fa fa-github" aria-hidden="true" title="Github"></i>
+          </span>
+        </a>
+        <a href="https://vipulgaurav.ml" target="_blank" class="nav-item">
+          <span class="icon">
+            <i class="fa fa-user" aria-hidden="true" title="Portfolio"></i>
+          </span>
+        </a>
+        <a href="https://linkedin.com/in/vipul-gaurav" target="_blank" class="nav-item">
+          <span class="icon">
+            <i class="fa fa-linkedin" aria-hidden="true" title="Linkedin"></i>
+          </span>
+        </a>
+
+        
+      </div>
+
+      <div class="nav-right nav-menu" id='nav-menu'>
+        <a href="/archive" class="nav-item">Archive</a>
+        <a href="/tags" class="nav-item">Tags</a>
+      </div>
+
+      
+    </nav>
+
+    <div class="tile is-parent">
+
+        <div class="box">
+    <h1 class="post-title">Object Oriented Programming using Python</h1>
+    <span class="post-meta">16 April, 2020. It was a Thursday. <a style="color:grey" href="#disqus_thread"></a></span><hr/>
+
+    <span class="post-text"><h1 id="object-oriented-programming-using-python">Object Oriented Programming using Python</h1>
+
+<h3 id="classes-and-objects">Classes and Objects</h3>
+<p>Let us start with a simple idea. Close your eyes. Imagine something!
+If you can identify what you imagined clearly then it is an object otherwise it is a class!
+Let us say that we imagined a picture of the phone. Now what phone was it? What were its features? We can say that a phone had the following features:</p>
+<ul>
+  <li>Color</li>
+  <li>Model</li>
+  <li>Brand</li>
+  <li>Screen Size</li>
+  <li>Operating System
+And the phone had the following behavioural properties:</li>
+  <li>Switch on</li>
+  <li>Switch off</li>
+  <li>Call</li>
+  <li>Browse
+Now, let us answer the questions one by one about what you imagined in the exercise!!
+If I say that the phone I imagined was say white in colour, model X, brand Apple, with a screen size of say 6 inches, and an iOS operating system, I can easily identify it as iPhone X. While, if I am not able to answer any one of these features clearly, then it cannot be said to be a specific phone like iPhone. Thus, in this paradigm, iPhone X is an object and the phone is a class. Hence, an object can be simply defined as a real-time entity with properties and behaviour which belongs to a blueprint called class.
+<img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fdavidphelan%2Ffiles%2F2017%2F09%2FIMG_2869-copy.jpg" alt="alt-text" />
+<img src="https://image.slidesharecdn.com/objectorientedprogramming-151026072156-lva1-app6892/95/object-oriented-programming-4-638.jpg?cb=1446267724" alt="alt-text" /><br />
+Similarly, we can imagine a class of Car as well!<br />
+<img src="https://www.miltonmarketing.com/wp-content/uploads/2018/04/oopconceptimage15345345.png" alt="alt-text" />
+It has the features of fuel, maximum speed, number of gears etc. and a simple behaviour of refuel, get fuel, set speed and drive! So, if we instantiate it to say Hyundai i10 then that instance is an object whose properties can be described by the class Car. Hence, a class is a concept to enable users to make their own data-type and gives more power to the programmer! SUDO (A programming paradigm for cheers ;) )!
+Let us give a formal definition to class and object then!
+    <blockquote>
+      <p>Class: A user-defined blueprint or prototype of which objects are composed of, it represents the features, properties and behaviour common to all objects belonging to that paradigm.</p>
+    </blockquote>
+  </li>
+</ul>
+
+<blockquote>
+  <p>Object: It refers to any real world entity which exhibits the following properties:
+State: Representation of attributes describing the object
+Behaviour: Representation of methods of an object
+Identity: Each object is assigned a unique name</p>
+</blockquote>
+
+<p>In general, we practice a programming paradigm called procedural programming. In procedural programming, a program is divided into smaller parts called methods. These methods are the basic entities used to construct a program. One of the main advantages of procedural programming is code reusability. However, the implementation of a complex real-world scenario becomes a difficult task unwieldy.</p>
+
+<blockquote>
+  <p>The basic idea of OOP is to divide a sophisticated program into a bunch of objects talking to each other.</p>
+</blockquote>
+
+<p>The concepts of objects and classes allow us to create complex applications in Python. This is why classes and objects are considered the basic building blocks behind all OOP’s principles.</p>
+
+<ul>
+  <li>They are also instrumental for compartmentalizing code. Different components can become separate classes which would interact through interfaces. These ready-made components will also be available for use in future applications.</li>
+  <li>The use of classes makes it easier to maintain the different parts of an application since it is easier to make changes in classes</li>
+</ul>
+
+<p>Let us dive into a little bit of hands-on:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">firstClass</span><span class="p">:</span>
+    <span class="k">pass</span>
+<span class="nb">object</span> <span class="o">=</span> <span class="n">firstClass</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span>
+</code></pre></div></div>
+<p>I could have given a run option here, but left it intentional because it is highly encouraged that you learn to setup your Python Environment on local computer by simply searching the installation instruction steps as a self-assessment work out of interest.
+So, as you can see it is a simple syntax compared to other programming languages, and Python makes it simpler to learn object oriented approach due to its inherent modularity.
+Say we want to implement the following class (borrowed from Medium):
+<img src="https://miro.medium.com/max/810/1*xiYI_rl-_pX_27BAjxBL3g.png" alt="alt-text" /></p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Pokemon</span><span class="p">:</span>
+   <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">Name</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">Type</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">Health</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Name</span> <span class="o">=</span> <span class="n">Name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Type</span> <span class="o">=</span> <span class="n">Type</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Health</span> <span class="o">=</span> <span class="n">Health</span>
+    <span class="k">def</span> <span class="nf">attack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Health</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Health</span> <span class="o">-</span> <span class="mf">0.01</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">Health</span>
+        <span class="k">return</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Health</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">dodge</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Health</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">evolve</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Name</span> <span class="o">=</span> <span class="n">newName</span>
+        <span class="k">return</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Name</span><span class="p">)</span>
+<span class="nb">object</span> <span class="o">=</span> <span class="n">Pokemon</span><span class="p">(</span><span class="n">Pikachu</span><span class="p">,</span> <span class="n">Electric</span><span class="p">,</span> <span class="mi">101</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span>
+</code></pre></div></div>
+<p>Now, we made use of many unknown terms to you which needs to be explained:</p>
+<ol>
+  <li>Initializers: The initializer is used to initialize an object of a class. It’s a special method that outlines the steps that are performed when an object of a class is created in the program. It’s used to define and assign values to instance variables. 
+The initialization method is similar to other methods but has a pre-defined name, <strong>init</strong>. The initializer is a special method because it does not have a return type. The first parameter of <strong>init</strong> is self, which is a way to refer to the object being initialized.
+    <blockquote>
+      <p>The double underscores mean this is a special method that the Python interpreter will treat as a special case. The initializer is automatically called when an object of the class is created.</p>
+    </blockquote>
+  </li>
+  <li>Class and Instance Variables: The class variables are shared by all instances or objects of the classes. A change in the class variable will change the value of that property in all the objects of the class. The instance variables are unique to each instance or object of the class. A change in the instance variable will change the value of the property in that specific object only. Let us understand their initializations.
+Class variables are initialized outside the initializer and instance variables are defined inside the initializer as follows:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">pokemonVillians</span><span class="p">:</span>
+ <span class="n">teamName</span> <span class="o">=</span> <span class="s">'Rocket'</span>
+<span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">Name</span><span class="p">):</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">Name</span> <span class="o">=</span> <span class="n">Name</span>
+<span class="n">p1</span> <span class="o">=</span> <span class="n">pokemonVillians</span><span class="p">(</span><span class="s">"James"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Name:"</span><span class="p">,</span> <span class="n">p1</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</code></pre></div>    </div>
+    <p>Class variables are useful when implementing properties that should be common and accessible to all class objects.</p>
+  </li>
+  <li>Method Definitions: A method is a group of statements that performs some operations and may or may not return a result. There are three types of methods in Python:
+    <ul>
+      <li>instance methods</li>
+      <li>class methods</li>
+      <li>static methods
+We will discuss instance methods as they are the most used in object-oriented paradigm. Methods act as an interface between a program and the properties of a class in the program.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>These methods can either alter the content of the properties or use their values to perform a particular computation. In the aforementioned example, we have the attack(), dodge() and evolve() methods which introduces changes to the properties. Now, there are two important features associated with method declaration in Python.</p>
+<blockquote>
+  <p>Return Statement should not have any return type because Python does not support the idea of a data type</p>
+</blockquote>
+
+<blockquote>
+  <p>Self argument is a pseudo-variable provides a reference to the calling object, that is the object to which the method or property belongs to. If the user does not mention the self as the first argument, the first parameter will be treated for reference to the object.The self argument only needs to be passed in the method definition and not when the method is called.</p>
+</blockquote>
+
+<p>Method Overloading in Python does not occur explicitly but rather is an implicit process.</p>
+<blockquote>
+  <p>Overloading refers to making a method perform different operations based on the nature of its arguments.
+Let us take an example:</p>
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Pokemon</span><span class="p">:</span>
+   <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">Name</span><span class="p">,</span> <span class="n">Type</span><span class="p">,</span> <span class="n">Health</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Name</span> <span class="o">=</span> <span class="n">Name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Type</span> <span class="o">=</span> <span class="n">Type</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Health</span> <span class="o">=</span> <span class="n">Health</span>
+    <span class="c1"># Method Overloading
+</span>    <span class="k">def</span> <span class="nf">attack</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fire</span><span class="p">,</span> <span class="n">water</span><span class="p">,</span> <span class="n">electric</span><span class="p">,</span> <span class="n">ground</span><span class="p">,</span> <span class="n">psychic</span><span class="p">,</span> <span class="n">ghost</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"fire ="</span><span class="p">,</span> <span class="n">fire</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"water ="</span><span class="p">,</span> <span class="n">water</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"electric ="</span><span class="p">,</span> <span class="n">electric</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"ground ="</span><span class="p">,</span> <span class="n">ground</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"psychic ="</span><span class="p">,</span> <span class="n">psychic</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"ghost = "</span><span class="p">,</span> <span class="n">ghost</span><span class="p">)</span>
+<span class="n">Pikachu</span> <span class="o">=</span> <span class="n">Pokemon</span><span class="p">()</span>
+<span class="n">Pikachu</span><span class="o">.</span><span class="n">attack</span><span class="p">(</span><span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">electric</span><span class="p">)</span>
+<span class="n">Horsea</span> <span class="o">=</span> <span class="n">Pokemon</span><span class="p">()</span>
+<span class="n">Horsea</span><span class="o">.</span><span class="n">attack</span><span class="p">(</span><span class="bp">None</span><span class="p">,</span> <span class="n">water</span><span class="p">)</span>
+<span class="n">Alakazam</span> <span class="o">=</span> <span class="n">Pokemon</span><span class="p">()</span>
+<span class="n">Alakazam</span><span class="o">.</span><span class="n">attack</span><span class="p">(</span><span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">electric</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">psychic</span><span class="p">)</span>
+</code></pre></div>  </div>
+  <p>So, we can understand that method overloading can take place implicity as well based on the number and nature of arguments (signature of the method) passed into the method during invocation. In the above example, Pikachu.attack() will print only electric attacks, while Alakazam.attack() will print electric as well as psychic attacks in the order. You noticed that we used None in the order of arguments while calling attack() method using the object Pikachu, which is to prevent argument mismatch.</p>
+</blockquote>
+
+<p>Advantages of Method Overloading:</p>
+<ul>
+  <li>Overloading saves memory and since it becomes memory efficient, the execution speed increases.</li>
+  <li>It makes the code cleaner and readable</li>
+  <li>It allows the implementation of Polymorphism which we will discuss later.</li>
+</ul>
+
+<p>Now, let us come to Class and Static Methods.</p>
+<blockquote>
+  <p>Class methods are members of the class and hence can be accessed using the class name without creating a class object.</p>
+</blockquote>
+
+<p>To declare a method as a class method, we use the decorator @classmethod and cls is used to refer to the class just like self is used to refer to the object of the class.
+Similar to instance methods, class methods also have a default argument as ‘cls’.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Pokemon</span><span class="p">:</span>
+    <span class="n">teamName</span> <span class="o">=</span> <span class="s">"Team Rocket"</span><span class="c1"># class variables
+</span>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>  <span class="c1"># creating instance variables
+</span>    <span class="o">@</span><span class="nb">classmethod</span>
+    <span class="k">def</span> <span class="nf">getTeamName</span><span class="p">(</span><span class="n">cls</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">cls</span><span class="o">.</span><span class="n">teamName</span>
+<span class="k">print</span><span class="p">(</span><span class="n">Pokemon</span><span class="o">.</span><span class="n">getTeamName</span><span class="p">())</span>
+</code></pre></div></div>
+<p>Now, we come to static methods.
+Static methods are methods that are usually limited to class only and not their objects. They have no direct relation to the class variables or instance variables. They are used as utility functions inside the class or when we do not want the inherited classes.</p>
+
+<blockquote>
+  <p>Static methods can be accessed using the class name or the object name.</p>
+</blockquote>
+
+<p>Let us try them out now! To declare a method as a static method, we use the decorator @staticmethod. It does not use a reference to the object or class, so we do not have to use self or cls. We can pass as many arguments as we want and use this method to perform any function without interfering with the instance or class variables.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Pokemon</span><span class="p">:</span>
+    <span class="n">teamName</span> <span class="o">=</span> <span class="s">'Team Rocket'</span>  <span class="c1"># class variables
+</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>  <span class="c1"># creating instance variables
+</span>
+    <span class="o">@</span><span class="nb">staticmethod</span>
+    <span class="k">def</span> <span class="nf">trap</span><span class="p">():</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Yo! You are trapped in the static made by Team Rocket."</span><span class="p">)</span>
+
+
+<span class="n">Pikachu</span> <span class="o">=</span> <span class="n">Pokemon</span><span class="p">(</span><span class="s">'lol, noob, Thunderbolt!'</span><span class="p">)</span>
+<span class="n">Pikachu</span><span class="o">.</span><span class="n">trap</span><span class="p">()</span>
+<span class="n">Pikachu</span><span class="o">.</span><span class="n">trap</span><span class="p">()</span>
+</code></pre></div></div>
+<p>If we execute this, we will get the message “Yo! You are trapped in the static made by Team Rocket.” twice because the static methods do not change class attributes and leave them as it is.</p>
+
+<blockquote>
+  <p>The purpose of static methods is to make use of its own parameters for useful results.</p>
+</blockquote>
+
+<p>Now, we come to the concept of Access Modifiers.</p>
+<blockquote>
+  <p>Access modifiers are tags we can associate with each member to define which parts of the program can access it directly.</p>
+</blockquote>
+
+<ul>
+  <li>Public attributes are those that be can be accessed inside the class and outside the class.</li>
+  <li>Private attributes cannot be accessed directly from outside the class but can be accessed from inside the class.</li>
+  <li>Protected properties and methods in other languages can be accessed by classes and their subclasses. Python does not have a hard rule for accessing properties and methods, so it does not have the protected access modifier.</li>
+</ul>
+
+<p>Let us try to understand each of these concepts with an example.
+By default, all methods in Python are made publicly available. In order to make it private, we need to have it explicitly done by specifying the keyword private along with the declaration.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Pokemon</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">types</span><span class="p">):</span>
+        <span class="c1"># all properties are public
+</span>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">types</span> <span class="o">=</span> <span class="n">types</span>
+
+    <span class="k">def</span> <span class="nf">displayName</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Name:"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+
+
+<span class="n">Pikachu</span> <span class="o">=</span> <span class="n">Pokemon</span><span class="p">(</span><span class="s">"Pikachu"</span><span class="p">,</span> <span class="s">"electric"</span><span class="p">)</span>
+<span class="n">Pikachu</span><span class="o">.</span><span class="n">displayName</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">Pikachu</span><span class="o">.</span><span class="n">types</span><span class="p">)</span>
+</code></pre></div></div>
+<p>Here, when Pikachu object calls the method displayName and can also access the attribute ‘types’ since they are public so we will get an output here.
+Now, let us try making some things interesting by using the declaration ‘private’. We can make members private using the double underscore __ prefix.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Pokemon</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">types</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__types</span> <span class="o">=</span> <span class="n">types</span>  <span class="c1"># types is a private property
+</span>
+
+<span class="n">Pikachu</span> <span class="o">=</span> <span class="n">Pokemon</span><span class="p">(</span><span class="s">"Pikachu"</span><span class="p">,</span> <span class="s">"electric"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Name:"</span><span class="p">,</span> <span class="n">Pikachu</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Type:"</span><span class="p">,</span> <span class="n">Pikachu</span><span class="o">.</span><span class="n">__types</span><span class="p">)</span>  <span class="c1"># this will cause an error
+</span></code></pre></div></div>
+<p>In this, you will get the following error message</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">Traceback (most recent call last):
+</span><span class="gp">  File "main.py", line 9, in &lt;module&gt;</span><span class="w">
+</span><span class="gp">    print("Type:", Pikachu.__types)  #</span><span class="w"> </span>this will cause an error
+<span class="go">AttributeError: 'Pokemon' object has no attribute '__types'
+</span></code></pre></div></div>
+<ul>
+  <li>
+    <p>In the above example, name is a public property but types is a private property, so it cannot be accessed outside the class.</p>
+  </li>
+  <li>
+    <p>When it is tried to be accessed outside the class, the following error is generated:
+‘Pokemon’ object has no attribute ‘__types’</p>
+  </li>
+  <li>
+    <p>To ensure that no one from the outside knows about this private property, the error does not reveal the identity of it.
+But, we can still access the private members if absolutely necessary by using _<Classname></Classname></p>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Pokemon</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">types</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__types</span> <span class="o">=</span> <span class="n">types</span>  <span class="c1"># types is a private property
+</span>
+<span class="n">Pikachu</span> <span class="o">=</span> <span class="n">Pokemon</span><span class="p">(</span><span class="s">"Pikachu"</span><span class="p">,</span> <span class="s">"electric"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Name:"</span><span class="p">,</span> <span class="n">Pikachu</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Type:"</span><span class="p">,</span> <span class="n">Pikachu</span><span class="o">.</span><span class="n">_Pokemon__types</span><span class="p">)</span>  <span class="c1"># this will not cause an error
+</span></code></pre></div></div>
+<h3 id="data-abstraction">Data Abstraction</h3>
+<p>Why we need to hide information? What is the need of it? Let us try to first understand why is it important to hide information with an example.
+Consider your college library managed by a librarian and the following class can be used to define the library:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Library</span><span class="p">:</span>
+   
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bookID</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">):</span>
+        <span class="c1"># all properties are public
+</span>        <span class="bp">self</span><span class="o">.</span><span class="n">bookID</span> <span class="o">=</span> <span class="n">bookID</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__username</span> <span class="o">=</span> <span class="n">username</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__password</span> <span class="o">=</span> <span class="n">password</span>
+    <span class="k">def</span> <span class="nf">issueBook</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"ID: "</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">bookID</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">returnBook</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"ID: "</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">bookID</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">login</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Enter username and password"</span><span class="p">)</span>
+
+
+
+<span class="n">l1</span> <span class="o">=</span> <span class="n">Library</span><span class="p">(</span><span class="mi">2500</span><span class="p">,</span> <span class="s">"Python 3 by O'Reilly"</span><span class="p">,</span> <span class="s">"Librarian"</span><span class="p">,</span> <span class="s">"Password"</span><span class="p">)</span>
+<span class="n">l1</span><span class="o">.</span><span class="n">issueBook</span><span class="p">()</span>
+<span class="n">l1</span><span class="o">.</span><span class="n">returnBook</span><span class="p">()</span>
+<span class="n">l1</span><span class="o">.</span><span class="n">login</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>We observe that the login() method does not need access to book name and book ID at all for use but still has access to them. Hence, this can be a potential data leak and we need to implement a concept where the methods can access only those arguments which they actually need for carrying out their execution.</p>
+
+<blockquote>
+  <p>Data Hiding refers to the concept of hiding the inner workings of a class and simply providing an interface through which the outside world can interact with the class without knowing what’s going on inside.</p>
+</blockquote>
+
+<p>The purpose is to implement classes in such a way that the instances (objects) of these classes should not be able to cause any unauthorized access or change in the original contents of a class. One class does not need to know anything about the underlying algorithms of another class. However, the two can still communicate. It can be implemented with the idea of Data Abstraction and Data Encapsulation.</p>
+
+<blockquote>
+  <p>Data Encapsulation in OOP refers to binding the data and the methods to manipulate that data together in a single unit, that is, class.</p>
+</blockquote>
+
+<p>It is a good practice to implement the class members or attributes as private in case of implementing encapsulation. These members can be accessed by public methods of the same class and hence, we can use the attributes without knowing their details. The methods used for this are called as “getters” and “setters”.</p>
+
+<blockquote>
+  <p>A getter method allows reading a property’s value.</p>
+</blockquote>
+
+<blockquote>
+  <p>A setter method allows modifying a property’s value.</p>
+</blockquote>
+
+<p>Let us implement this in code:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Pokemon</span><span class="p">():</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>  <span class="c1"># defining initializer
+</span>        <span class="bp">self</span><span class="o">.</span><span class="n">__name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">setPokemon</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__name</span> <span class="o">=</span> <span class="n">x</span>
+
+    <span class="k">def</span> <span class="nf">getPokemon</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__name</span><span class="p">)</span>
+
+
+<span class="n">Electric</span> <span class="o">=</span> <span class="n">Pokemon</span><span class="p">(</span><span class="s">'Unknown'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Before setting:'</span><span class="p">,</span> <span class="n">Electric</span><span class="o">.</span><span class="n">getPokemon</span><span class="p">())</span>
+<span class="n">Electric</span><span class="o">.</span><span class="n">setPokemon</span><span class="p">(</span><span class="s">'Pikachu'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'After setting:'</span><span class="p">,</span> <span class="n">Electric</span><span class="o">.</span><span class="n">getPokemon</span><span class="p">())</span>
+</code></pre></div></div>
+
+<p>Output is as expected that before setting we get Unknown and after setting we get Pikachu!</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">Before setting: Unknown
+After setting: Pikachu
+</span></code></pre></div></div>
+
+<p>So, we made a class Pokemon where we defined a private property, named __name, which the main code cannot access. Also, note that we have started the name of this private property with __.
+For this property to interact with any external environment, we have to use the get and set functions. The get function, getPokemon(), returns the value of __name and the setPokemon(x) sets the value of __name equal to the parameter x passed.</p>
+
+<p>However, there is a brief difference between these two ideas as follows (Credits: GeeksforGeeks)- <br />
+<img src="https://practice.geeksforgeeks.org/ckeditor/images/uploads/1493169109_geeks_3.png" alt="alt-text" /></p>
+
+<p>Now, we come to the next principle of OOPs which is Inheritance.</p>
+
+<h3 id="inheritance">Inheritance</h3>
+<blockquote>
+  <p>Inheritance is a concept to implement reusability of a class by providing a new way to create classes from existing classes.</p>
+</blockquote>
+
+<p>The new class created is called the Child Class and the class from which it inherits all “non-private” variables and methods is called the Parent Class.</p>
+
+<p>Inheritance is a ‘is-a’ relationship that is for example:
+<img src="https://raw.githubusercontent.com/vgaurav3011/7-Days-of-OOPs/master/Vipul/Day%202/inheritance.png" alt="alt-text" /></p>
+
+<p>We can say that electric type pokemon ‘is-a’ Pokemon, but not all Pokemon are ‘electricPokemon’.
+Hence, the inheritance relationship can exist in former case but not the latter.
+In Python, the parent of all the classes is the Object Class, the real OG of Object Oriented Programming.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Pokemon</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">types</span><span class="p">,</span> <span class="n">health</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">types</span> <span class="o">=</span> <span class="n">types</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">health</span> <span class="o">=</span> <span class="n">health</span>
+
+    <span class="k">def</span> <span class="nf">getPokemon</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Name:"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Type:"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">types</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Health:"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">health</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">electricPokemon</span><span class="p">(</span><span class="n">Pokemon</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">types</span><span class="p">,</span> <span class="n">health</span><span class="p">,</span> <span class="n">attack</span><span class="p">):</span>
+        <span class="c1"># calling the constructor from parent class
+</span>        <span class="n">Pokemon</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">types</span><span class="p">,</span> <span class="n">health</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">attack</span> <span class="o">=</span> <span class="n">attack</span>
+
+    <span class="k">def</span> <span class="nf">getElectricPokemon</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">getPokemon</span><span class="p">()</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Attack:"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">attack</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">waterPokemon</span><span class="p">(</span><span class="n">Pokemon</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">types</span><span class="p">,</span> <span class="n">health</span><span class="p">,</span> <span class="n">attack</span><span class="p">):</span>
+        <span class="c1"># calling the constructor from parent class
+</span>        <span class="n">Pokemon</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">types</span><span class="p">,</span> <span class="n">health</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">attack</span> <span class="o">=</span> <span class="n">attack</span>
+
+    <span class="k">def</span> <span class="nf">getWaterPokemon</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">getPokemon</span><span class="p">()</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Attack:"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">attack</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">firePokemon</span><span class="p">(</span><span class="n">Pokemon</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">types</span><span class="p">,</span> <span class="n">health</span><span class="p">,</span> <span class="n">attack</span><span class="p">):</span>
+        <span class="c1"># calling the constructor from parent class
+</span>        <span class="n">Pokemon</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">types</span><span class="p">,</span> <span class="n">health</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">attack</span> <span class="o">=</span> <span class="n">attack</span>
+
+    <span class="k">def</span> <span class="nf">getFirePokemon</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">getPokemon</span><span class="p">()</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Attack:"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">attack</span><span class="p">)</span>
+
+
+<span class="n">p1</span> <span class="o">=</span> <span class="n">electricPokemon</span><span class="p">(</span><span class="s">"Pikachu"</span><span class="p">,</span> <span class="s">"Electric"</span><span class="p">,</span> <span class="s">"200 HP"</span><span class="p">,</span> <span class="s">"Thunderbolt"</span><span class="p">)</span>
+<span class="n">p1</span><span class="o">.</span><span class="n">getElectricPokemon</span><span class="p">()</span>
+
+<span class="n">p2</span> <span class="o">=</span> <span class="n">waterPokemon</span><span class="p">(</span><span class="s">"Oshawott"</span><span class="p">,</span> <span class="s">"Water"</span><span class="p">,</span> <span class="s">"350 HP"</span><span class="p">,</span> <span class="s">"Shell Blast"</span><span class="p">)</span>
+<span class="n">p2</span><span class="o">.</span><span class="n">getWaterPokemon</span><span class="p">()</span>
+
+<span class="n">p3</span> <span class="o">=</span> <span class="n">firePokemon</span><span class="p">(</span><span class="s">"Cyndaquil"</span><span class="p">,</span> <span class="s">"Fire"</span><span class="p">,</span> <span class="s">"400 HP"</span><span class="p">,</span> <span class="s">"Flamethrower"</span><span class="p">)</span>
+<span class="n">p3</span><span class="o">.</span><span class="n">getFirePokemon</span><span class="p">()</span>
+</code></pre></div></div>
+<p>Hence, we get the output:</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">Name: Pikachu
+Type: Electric
+Health: 200 HP
+Attack: Thunderbolt
+Name: Oshawott
+Type: Water
+Health: 350 HP
+Attack: Shell Blast
+Name: Cyndaquil
+Type: Fire
+Health: 400 HP
+Attack: Flamethrower
+</span></code></pre></div></div>
+
+<ul>
+  <li>In the code above, we have defined a parent class, Pokemon, and multiple child classes, electricPokemon, waterPokemon and firePokemon.</li>
+  <li>Car inherits all the properties and methods of the Vehicle class and can access and modify them.</li>
+</ul>
+
+<p>super() Function: The use of super() comes into play when we implement inheritance. It is used in a child class to refer to the parent class without explicitly naming it. It makes the code more manageable, and there is no need to know the name of the parent class to access its attributes.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Pokemon</span><span class="p">:</span>
+    <span class="n">Health</span> <span class="o">=</span> <span class="mi">90</span>
+
+
+<span class="k">class</span> <span class="nc">electricPokemon</span><span class="p">(</span><span class="n">Pokemon</span><span class="p">):</span>
+    <span class="n">Health</span> <span class="o">=</span> <span class="mi">50</span>
+
+    <span class="k">def</span> <span class="nf">display</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Health from Pokemon:"</span><span class="p">,</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">Health</span><span class="p">)</span>
+
+        <span class="k">print</span><span class="p">(</span><span class="s">"Health from electric Pokemon:"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">Health</span><span class="p">)</span>
+
+
+<span class="n">obj</span> <span class="o">=</span> <span class="n">electricPokemon</span><span class="p">()</span>
+<span class="n">obj</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+</code></pre></div></div>
+<p>Hence, we get the expected output:</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">Health from Pokemon: 90
+Health from electric Pokemon: 50
+</span></code></pre></div></div>
+<p>super() is also used with the methods. Whenever a parent class and the immediate child class have any methods with the same name, we use super() to access the methods from the parent class inside the child class.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Pokemon</span><span class="p">:</span>  <span class="c1"># defining the parent class
+</span>    <span class="k">def</span> <span class="nf">display</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  <span class="c1"># defining diplay method in the parent class
+</span>        <span class="k">print</span><span class="p">(</span><span class="s">"I am from the Pokemon Kanto Originals"</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">Johto</span><span class="p">(</span><span class="n">Pokemon</span><span class="p">):</span>  <span class="c1"># defining the child class
+</span>    <span class="c1"># defining diplay method in the parent class
+</span>    <span class="k">def</span> <span class="nf">display</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"I am from the Johto Region Pokemon"</span><span class="p">)</span>
+
+
+<span class="n">obj</span> <span class="o">=</span> <span class="n">Johto</span><span class="p">()</span>  <span class="c1"># creating a car object
+</span><span class="n">obj</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+</code></pre></div></div>
+<p>And we get:</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">I am from the Pokemon Kanto Originals
+I am from the Johto Region Pokemon
+</span></code></pre></div></div>
+<p>Based on the child-parent relationship, there are five types of inheritance:</p>
+<ol>
+  <li>Single Inheritance: In single inheritance, there is only a single class extending from another class. We can take the example of the Pokemon class, as the parent class, and the electricPokemon class, as the child class.</li>
+  <li>Multilevel Inheritance: When a class is derived from a class which itself is derived from another class, it’s called Multilevel Inheritance. We can extend the classes to as many levels as we want to.</li>
+  <li>Hierarchial Inheritance: When more than one class inherits from the same class, it’s referred to as hierarchical inheritance. In hierarchical inheritance, more than one class extends, as per the requirement of the design, from the same base class. The common attributes of these child classes are implemented inside the base class.</li>
+  <li>Multiple Inheritance: When a class is derived from more than one base class, i.e., when a class has more than one immediate parent class, it is called Multiple Inheritance.</li>
+  <li>Hybrid Inheritance: A type of inheritance which is a combination of Multiple and Multi-level inheritance is called hybrid inheritance.
+<img src="https://static.javatpoint.com/tutorial/typescript/images/typescript-classes-types-of-inheritance.png" alt="alt-text" />
+Note: Java does not allow all types of inheritance, this is exclusive to Python and some other languages.</li>
+</ol>
+
+<p>Advantages of Inheritance:</p>
+<ol>
+  <li>Code Reusability</li>
+  <li>Code Modification becomes easy and more localized and you do not have to manually make changes in every class working with common attributes in case of changes.</li>
+  <li>Extensibility: Using inheritance, one can extend the base class as per the requirements of the derived class. It provides an easy way to upgrade or enhance specific parts of a product without changing the core attributes. An existing class can act as a base class from which a new class with upgraded features can be derived.</li>
+  <li>It is used to effectively implement Data Hiding.</li>
+</ol>
+
+<p>Coming to the next principle of OOPs now!</p>
+
+<h3 id="polymorphism">Polymorphism</h3>
+<blockquote>
+  <p>The word Polymorphism is a combination of two Greek words, Poly meaning many and Morph meaning forms.
+Polymorphism refers to the same object exhibiting different forms and behaviors.
+For example, take the Shape Class. The exact shape you choose can be anything. It can be a rectangle, a circle, a polygon or a diamond. So, these are all shapes, but their properties are different. This is called Polymorphism.
+Consider the following example of class Shape, which can be used to draw a Circle, a Rectangle and even a Square but with the common method of draw() extended from the parent class Shape.
+<img src="https://cdn.askpython.com/wp-content/uploads/2019/12/Polymorphism-in-Python.png" alt="alt-text" /></p>
+</blockquote>
+
+<p>In effect, polymorphism cuts down the work of the developer. When the time comes to create more specific subclasses with certain unique attributes and behaviors, the developer can alter the code in the particular portions where the responses differ. All other pieces of the code can be left untouched.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Rectangle</span><span class="p">():</span>
+
+    <span class="c1"># initializer
+</span>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">width</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="n">height</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sides</span> <span class="o">=</span> <span class="mi">4</span>
+
+    <span class="c1"># method to calculate Area
+</span>    <span class="k">def</span> <span class="nf">getArea</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">height</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">Circle</span><span class="p">():</span>
+    <span class="c1"># initializer
+</span>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">=</span> <span class="n">radius</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sides</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="c1"># method to calculate Area
+</span>    <span class="k">def</span> <span class="nf">getArea</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">*</span> <span class="mf">3.142</span><span class="p">)</span>
+
+
+<span class="n">shapes</span> <span class="o">=</span> <span class="p">[</span><span class="n">Rectangle</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="mi">30</span><span class="p">),</span> <span class="n">Circle</span><span class="p">(</span><span class="mi">20</span><span class="p">)]</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Sides of a rectangle are"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">shapes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">sides</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Area of rectangle is:"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">shapes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">getArea</span><span class="p">()))</span>
+</code></pre></div></div>
+<p>Here, we get:</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">Sides of a rectangle are 4
+Area of rectangle is: 750
+Sides of a circle are 0
+Area of circle is: 1256.8
+</span></code></pre></div></div>
+<p>The getArea() method has the same name but different implementations for distinct corresponding classes and gives the output accordingly. Thus, we implemented polymorphism.</p>
+
+<p>We can also make use of inheritance to achieve polymorphism. For that, we will learn a new concept called method overriding.
+Consider the same code but with inheritance:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Shape</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  <span class="c1"># initializing sides of all shapes to 0
+</span>        <span class="bp">self</span><span class="o">.</span><span class="n">sides</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">def</span> <span class="nf">getArea</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>
+
+
+<span class="k">class</span> <span class="nc">Rectangle</span><span class="p">(</span><span class="n">Shape</span><span class="p">):</span>  <span class="c1"># derived form Shape class
+</span>    <span class="c1"># initializer
+</span>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">width</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="n">height</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sides</span> <span class="o">=</span> <span class="mi">4</span>
+
+    <span class="c1"># method to calculate Area
+</span>    <span class="k">def</span> <span class="nf">getArea</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">height</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">Circle</span><span class="p">(</span><span class="n">Shape</span><span class="p">):</span>  <span class="c1"># derived form Shape class
+</span>    <span class="c1"># initializer
+</span>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">=</span> <span class="n">radius</span>
+
+    <span class="c1"># method to calculate Area
+</span>    <span class="k">def</span> <span class="nf">getArea</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">*</span> <span class="mf">3.142</span><span class="p">)</span>
+<span class="n">shapes</span> <span class="o">=</span> <span class="p">[</span><span class="n">Rectangle</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="mi">30</span><span class="p">),</span> <span class="n">Circle</span><span class="p">(</span><span class="mi">20</span><span class="p">)]</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Sides of a rectangle are"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">shapes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">sides</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Area of rectangle is:"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">shapes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">getArea</span><span class="p">()))</span>
+</code></pre></div></div>
+<blockquote>
+  <p>Method overriding is the process of redefining a parent class’s method in a subclass.</p>
+</blockquote>
+
+<p>We over-ridden the getArea() method in the aforementioned example.</p>
+
+<p>Advantages of Method Overriding:</p>
+<ul>
+  <li>
+    <p>The derived classes can give their own specific implementations to inherited methods without modifying the parent class methods.</p>
+  </li>
+  <li>
+    <p>For any method, a child class can use the implementation in the parent class or make its own implementation.</p>
+  </li>
+  <li>
+    <p>Method Overriding needs inheritance and there should be at least one derived class to implement it.</p>
+  </li>
+  <li>
+    <p>The method in the derived classes usually have a different implementation from one another.
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Method_overriding_in_subclass.svg/1200px-Method_overriding_in_subclass.svg.png" alt="alt-text" /></p>
+  </li>
+</ul>
+
+<p>Next, we will also learn about overloading operators in Python.
+Operators in Python can be overloaded to operate in a certain user-defined way. Whenever an operator is used in Python, its corresponding method is invoked to perform its predefined function. For example, when the + operator is called, it invokes the special function, <strong>add</strong>, in Python, but this operator acts differently for different data types. For example, the + operator adds the numbers when it is used between two int data types and merges two strings when it used between string data types.</p>
+
+<p>The last concept used for implementing polymorphism is Duck Typing. We say that if an object quacks like a duck, swims like a duck, eats like a duck or in short, acts like a duck, that object is a duck.</p>
+
+<blockquote>
+  <p>Dynamic typing means we can change the type of an object later in the code.</p>
+</blockquote>
+
+<p><br />
+Duck typing extends the concept of dynamic typing in Python. <br /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>  <span class="c1"># type of x is an integer
+</span><span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="s">"Pokemon"</span>  <span class="c1"># type x is now string
+</span><span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+</code></pre></div></div>
+<p><br />
+Hence, Python allows dynamic changing of type during coding.
+Let us try this out!
+<br /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Pikachu</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">Voice</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Pika Pika"</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">Bulbasaur</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">Voice</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Bulba Bulba"</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">Charizard</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">Sound</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">flame</span><span class="p">):</span>
+        <span class="n">flame</span><span class="o">.</span><span class="n">Voice</span><span class="p">()</span>
+
+
+<span class="n">sound</span> <span class="o">=</span> <span class="n">Charizard</span><span class="p">()</span>
+<span class="n">grass</span> <span class="o">=</span> <span class="n">Bulbasaur</span><span class="p">()</span>
+<span class="n">electric</span> <span class="o">=</span> <span class="n">Pikachu</span><span class="p">()</span>
+
+<span class="n">sound</span><span class="o">.</span><span class="n">Sound</span><span class="p">(</span><span class="n">grass</span><span class="p">)</span>
+<span class="n">sound</span><span class="o">.</span><span class="n">Sound</span><span class="p">(</span><span class="n">electric</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><br />
+The voice is determined when the method is called, so it does not matter which object type you are passing as a parameter in the Sound() method, what matters is that the Voice() method should be defined in all the classes whose objects are passed in the Sound() method. So, we get:
+<br /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Bulba</span> <span class="n">Bulba</span>
+<span class="n">Pika</span> <span class="n">Pika</span>
+</code></pre></div></div>
+
+<p>Duck typing is useful as it simplifies the code and the user can implement the functions without worrying about the data type. But this may not be the case all the time. The user might not follow the instructions to implement the necessary steps for duck typing. To cater to this issue, Python introduced the concept of Abstract Base Classes, or ABC. <br /></p>
+
+<blockquote>
+  <p>Abstract base classes define a set of methods and properties that a class must implement in order to be considered a duck-type instance of that class.</p>
+</blockquote>
+
+<p><br /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Shape</span><span class="p">:</span>  <span class="c1"># Shape is a child class of ABC
+</span>    <span class="k">def</span> <span class="nf">area</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>
+
+    <span class="k">def</span> <span class="nf">perimeter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>
+
+
+<span class="k">class</span> <span class="nc">Square</span><span class="p">(</span><span class="n">Shape</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">length</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">length</span> <span class="o">=</span> <span class="n">length</span>
+
+    <span class="k">def</span> <span class="nf">area</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">length</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">length</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">perimeter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="mi">4</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">length</span><span class="p">)</span>
+
+
+<span class="n">shape</span> <span class="o">=</span> <span class="n">Shape</span><span class="p">()</span>
+<span class="n">square</span> <span class="o">=</span> <span class="n">Square</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<p>In the example above, you can see that an instance of Shape can be created even though an object from this class cannot stand on its own. Square class, which is the child class of Shape, actually implements the methods, area() and perimeter(), of the Shape class. Shape class should provide a blueprint for its child classes to implement methods in it. To prevent the user from making a Shape class object, we use abstract base classes.</p>
+
+<p>To define an abstract base class, we use the abc module. The abstract base class is inherited from the built-in ABC class. We have to use the decorator @abstractmethod above the method that we want to declare as an abstract method.
+Now, we will learn about the relationship between objects themseleves.</p>
+
+<h3 id="aggregation-and-composition">Aggregation and Composition</h3>
+<p>Classes have three different types of relationships. These includes ‘is-a’, ‘has-a’ and ‘part-of’ relatiobships. We already revisited the ‘is-a’ relationship in form of inheritance.
+We define the ‘Part-Of’ relationship now:
+In this relationship, one class object is a component of another class object. Given two classes, class A and class B, they are in a part-of relation if a class A object is a part of class B object, or vice-versa.</p>
+
+<p>An instance of the component class can only be created inside the main class. In the example to the right, class B and class C have their own implementations, but their objects are only created once a class A object is created. Hence, part-of is a dependent relationship.</p>
+
+<p>Now, we define the ‘Has-a’ relationship:
+This is a slightly less concrete relationship between two classes. Class A and class B have a has-a relationship if one or both need the other’s object to perform an operation, but both class objects can exist independently of each other.</p>
+
+<p>This implies that a class has-a reference to an object of the other class but does not decide the lifetime of the other class’s referenced object.
+These are formally called Aggregation and Composition.
+<br /></p>
+
+<p><img src="https://raw.githubusercontent.com/vgaurav3011/vgaurav3011.github.io/master/images/asso.png?token=AHIGNHXMUWIC6MN47HGLDBC6UGSHE" alt="alt-text" /></p>
+
+<p><br />
+Let us try to see this in code: <br /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Car</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">color</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">model</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="n">color</span>
+
+    <span class="k">def</span> <span class="nf">printDetails</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Model:"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Color:"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">color</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">SmallEngine</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Car has started."</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">stop</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Car has stopped."</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">Small</span><span class="p">(</span><span class="n">Car</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">color</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">color</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">engine</span> <span class="o">=</span> <span class="n">SmallEngine</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">setStart</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">setStop</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+
+
+<span class="n">car1</span> <span class="o">=</span> <span class="n">Small</span><span class="p">(</span><span class="s">"Maruti"</span><span class="p">,</span> <span class="s">"Blue"</span><span class="p">)</span>
+<span class="n">car1</span><span class="o">.</span><span class="n">setStart</span><span class="p">()</span>
+<span class="n">car1</span><span class="o">.</span><span class="n">printDetails</span><span class="p">()</span>
+<span class="n">car1</span><span class="o">.</span><span class="n">setStop</span><span class="p">()</span>
+
+</code></pre></div></div>
+<p><br /></p>
+
+<p>Output:
+<br /></p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">Car has started.
+Model: Maruti
+Color: Blue
+Car has stopped.
+</span></code></pre></div></div>
+<p>Hence, we come to the conclusion of all the basic object oriented principles. This later transforms to object oriented designing used in the industry. Thus, now, you can write efficient code and also make sure to be a real SUDO user!</p>
+</span>
+    <br>
+<div class="pagination">
+  
+  <a class="pagination-previous" href="/2020/04/15/first-maths-in-ml/" data-toggle="tooltip" data-placement="top" title="Mathematics for Machine Learning"><span class=""></span> Mathematics ...</a>
+  
+  
+</div>
+
+</div>
+
+<!--<div class="box">-->
+    <!-- google ads code box -->
+<!--</div>-->
+
+
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    
+    
+    var disqus_shortname = 'vipul'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+
+     
+
+          <div class="tile is-child widget">
+
+     
+
+    </div>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">  
+    <p>
+        Few Rights Reserved.
+      
+        Made with <i class="fa fa-heart"></i> and <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>. Hosted on <a href="https://github.com/" target="_blank">Github</a>
+      </p>
+      <p>
+        <a class="icon" href="https://github.com/vgaurav3011" target="_blank">
+          <i class="fa fa-github" title="Github"></i>
+        </a>
+        <a class="icon" href="https://in.linkedin.com/in/vipul-gaurav" target="_blank">
+          <i class="fa fa-linkedin" title="Linkedin"></i>
+        </a>
+        <a class="icon" href="mailto:vgaurav3011@gmail.com" target="_blank">
+          <i class="fa fa-envelope" title="Email"></i>
+        </a>
+      </p>
+  </div>
+</div>
+</footer>
+
+<!-- js -->
+<script src="/assets/js/custom.js"></script>
+<script src="/assets/js/typewriter.js"></script>
+</body>
+</html>

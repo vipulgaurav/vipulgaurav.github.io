@@ -1,0 +1,15 @@
+
+https://vipulgaurav.github.io/404/
+https://vipulgaurav.github.io/archive/
+https://vipulgaurav.github.io/atom.xml
+https://vipulgaurav.github.io/
+https://vipulgaurav.github.io/rss.xml
+https://vipulgaurav.github.io/sitemap.txt
+https://vipulgaurav.github.io/tags/
+https://vipulgaurav.github.io/assets/css/style.css
+https://vipulgaurav.github.io/CHANGELOG/
+
+https://vipulgaurav.github.io/2020/04/16/oops/
+https://vipulgaurav.github.io/2020/04/15/first-maths-in-ml/
+https://vipulgaurav.github.io/2020/03/27/docker2/
+https://vipulgaurav.github.io/2020/03/20/docker1/

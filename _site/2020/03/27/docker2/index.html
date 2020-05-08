@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <link rel="stylesheet" href="/assets/css/normalize.css"/>
+  <link rel="stylesheet" href="/assets/css/bulma.css"/>
+  <link rel="stylesheet" href="/assets/css/custom.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/syntax.css" type="text/css">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <title>
+    
+      Docker: Using Containers &middot; theCreativeDecoder("Rise and Shine @MyBlog")
+    
+  </title>
+
+</head>
+
+
+<body>
+
+<section class="hero is-dark">
+  <div class="hero-body">
+    <div class="container">
+        <h1 class="title">
+          <span class="typewrite" data-period="2000" data-type='[ "Konichiwa!", "I am Vipul", "Autodidact Programmer",
+           "I drink and automate things", "Dattebayo!"]'>
+            <span class="wrap"></span>
+          </span>
+        </h1>
+      <h4 class="subtitle" id="quote">
+      </h4>
+    </div>
+  </div>
+</section>
+
+<div class="main-container">
+  <div class="tile is-ancestor is-vertical">
+
+
+    <nav class="nav has-shadow">
+
+      <div class="nav-left">
+
+        <a href="/" class="nav-item">
+          <span class="icon">
+            <i class="fa fa-home" aria-hidden="true" title="Homepage"></i>
+          </span>
+        </a>
+
+        <a href="https://github.com/vgaurav3011" target="_blank" class="nav-item">
+          <span class="icon">
+            <i class="fa fa-github" aria-hidden="true" title="Github"></i>
+          </span>
+        </a>
+        <a href="https://vipulgaurav.ml" target="_blank" class="nav-item">
+          <span class="icon">
+            <i class="fa fa-user" aria-hidden="true" title="Portfolio"></i>
+          </span>
+        </a>
+        <a href="https://linkedin.com/in/vipul-gaurav" target="_blank" class="nav-item">
+          <span class="icon">
+            <i class="fa fa-linkedin" aria-hidden="true" title="Linkedin"></i>
+          </span>
+        </a>
+
+        
+      </div>
+
+      <div class="nav-right nav-menu" id='nav-menu'>
+        <a href="/archive" class="nav-item">Archive</a>
+        <a href="/tags" class="nav-item">Tags</a>
+      </div>
+
+      
+    </nav>
+
+    <div class="tile is-parent">
+
+        <div class="box">
+    <h1 class="post-title">Docker: Using Containers</h1>
+    <span class="post-meta">27 March, 2020. It was a Friday. <a style="color:grey" href="#disqus_thread"></a></span><hr/>
+
+    <span class="post-text"><h1 id="docker-using-containers-part-2">Docker: Using Containers (PART 2)</h1>
+<p>Let us dive right into hands-on coding to use containers in Docker.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span><span class="nb">sudo </span>docker run hello-world
+</code></pre></div></div>
+<p>You can skip the sudo if you are running docker as adminstrator.
+You should get the following message if the installation was successfull:
+<img src="https://raw.githubusercontent.com/vgaurav3011/glugmvit.github.io/master/assets/images/docker/10.png" alt="alt text" /> <br />
+Let us see what exactly happend behind the scenes here:<br /></p>
+
+<p><img src="https://raw.githubusercontent.com/vgaurav3011/glugmvit.github.io/master/assets/images/docker/11.png" alt="alt text" /><br />
+The following steps took place to display the above output:</p>
+<ol>
+  <li>Our command instructed the computer to run the docker image called hello-world</li>
+  <li>The hello-world image was fetched from the Docker Hub</li>
+  <li>If the image was locally available then it will be fetched from the cache</li>
+  <li>The computer runs the image on local machine</li>
+  <li>Stop the container</li>
+</ol>
+
+<p>So, the bigger question is where do these images come from??
+When the container image is not present locally then it is fetched from a registry on DockerHub online which is a collection of all the container images. DockerHub is a paid registry which allows unlimited storage and access for public registries and restricted access for premium registeries. It can be accessed on https://hub.docker.com/. You will have to sign up on this website in order to publish any images to the Docker registry. So, before proceeding further go sign up on the above link!
+To access the account through the terminal for uploading images, execute the following command and answer the prompt of login details:</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span><span class="nb">sudo </span>docker login
+</code></pre></div></div>
+<p>If we wish to upload an image to the registry, we use the following command:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span><span class="nb">sudo </span>docker push image-name
+</code></pre></div></div>
+<p>where image-name will be the title of your container image.
+If we wish to access the various commands or debugging logs we can use the following command:</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span><span class="nb">sudo </span>docker run <span class="nt">--help</span>
+</code></pre></div></div>
+<p>Some of the options for docker command manipulations are:</p>
+<ol>
+  <li>docker logs: It provides a view to the entire detailed logs of execution and after stopping as well.</li>
+  <li>docker ps: Lists all the running container images and if used with the option -a it also displays the stopped containers.</li>
+  <li>docker stop: Used to stop a running container.</li>
+  <li>docker rm: Deletes a container.</li>
+  <li>docker inspect: Get details of the container
+Let us try out some of these commands!
+    <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span><span class="nb">sudo </span>docker ps
+</code></pre></div>    </div>
+    <p><img src="https://raw.githubusercontent.com/vgaurav3011/glugmvit.github.io/master/assets/images/docker/docker2.1.png" alt="alt text" /><br />
+We get the list of containers running currently with their dates of creation and unique IDs.</p>
+    <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span><span class="nb">sudo </span>docker ps <span class="nt">-a</span>
+</code></pre></div>    </div>
+    <p><img src="https://raw.githubusercontent.com/vgaurav3011/glugmvit.github.io/master/assets/images/docker/docker2.2.png" alt="alt text" /><br />
+It displays the stopped containers as well.</p>
+    <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span><span class="nb">sudo </span>docker inspect container-id
+</code></pre></div>    </div>
+    <p>We use the container id of the nginx image specified in the above illustration.
+When we inspect it we get a detailed log whose small part is illustrated below.
+<img src="https://raw.githubusercontent.com/vgaurav3011/glugmvit.github.io/master/assets/images/docker/docker2.3.png" alt="alt text" /><br />
+Now, let us talk about the docker run command more in detail.
+The run command is analogous to setting up a new machine with brand new programs for execution. It allows the creation of same image multiple times in different containers as well. This feature makes it useful in executing similar or dissimilar processes in parallel. Say for example, if we run the following commands:</p>
+    <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span><span class="nb">sudo </span>docker run alpine <span class="nb">printenv</span>
+<span class="gp">$</span><span class="w"> </span><span class="nb">sudo </span>docker run alpine <span class="nb">printenv</span>
+</code></pre></div>    </div>
+    <p>Alpine is a small package in Linux registry and the run command will fetch it from the Docker Hub initially since it is not available on the local system then it will execute the method printenv present in the package. However, it will assign different hosts with unique IDs to each command even if they are same.
+An alternate to remove stopped containers without specifying their unique ID is to use the following command:</p>
+    <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span><span class="nb">sudo </span>docker container prune <span class="nt">-f</span>
+</code></pre></div>    </div>
+    <p>It removes any inactive containers and the -f switch is an implicit confirmation to proceed and delete all stopped containers right away, instead of asking to confirm that operation.
+Now, we wish to permanently store data in the containers. Till now whatever information we processed is lost when we stopped the container. Hence, we are going to classify containers based on this:</p>
+  </li>
+  <li>Stateful Containers: These containers store the information even after being stopped and retain the contents after its resumption.</li>
+  <li>Stateless Containers: They lose all the information processed as soon as it stops.</li>
+</ol>
+
+<p>The internet makes use of long lived running containers for network connections called server containers. Let us illustrate it with the following example:</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span><span class="nb">sudo </span>docker run alpine ping www.docker.com
+</code></pre></div></div>
+
+<p><img src="https://raw.githubusercontent.com/vgaurav3011/glugmvit.github.io/master/assets/images/docker/1.png" alt="alt text" /><br />
+The ping command will not stop as the server is hosted and continously running in the background and we have to press Ctrl+C to stop the execution of command. If we add -d switch the execution will not display output and only the container is initialized. We can also specify port number explicity to run a server container on a specific network connection as follows:</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span><span class="nb">sudo </span>docker run <span class="nt">-d</span> <span class="nt">-p</span> 8085:80 nginx
+</code></pre></div></div>
+<p>This command will run the server named nginx on port number 80 with -d switch indicating that it will run in the background. To check it out you can visit http://localhost:8085 :<br />
+<img src="https://raw.githubusercontent.com/vgaurav3011/glugmvit.github.io/master/assets/images/docker/4.png" alt="alt-text" /><br />
+If you get the above message it successfully executed!
+The best part about this is that containers isolate all the processes within itself and will not affect or be affected by the processes occuring on the local machine. It ensures that each software deployed through a container meets its own requirements without affecting the specifications of the rest of the system.
+Let us try running a Jenkins server as a wrap up for this post.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span><span class="nb">sudo </span>docker run <span class="nt">-d</span> <span class="nt">-p</span> 8088:8080 jenkins
+</code></pre></div></div>
+<p>We will get the following processing command at http://localhost:8088 :<br />
+<img src="https://raw.githubusercontent.com/vgaurav3011/glugmvit.github.io/master/assets/images/docker/5.png" alt="alt-text" /><br />
+Once you sign up and login then:<br />
+<img src="https://raw.githubusercontent.com/vgaurav3011/glugmvit.github.io/master/assets/images/docker/6.png" alt="alt text" /><br />
+We can now continously integrate server and make changes with the localhost within the container without affecting any external processes. In the next post, we will try learn to create and publish our own docker images! Cheers!</p>
+</span>
+    <br>
+<div class="pagination">
+  
+  <a class="pagination-previous" href="/2020/03/20/docker1/" data-toggle="tooltip" data-placement="top" title="Docker: A Brief Introduction"><span class=""></span> Docker: A Br...</a>
+  
+  
+  <a class="pagination-next" href="/2020/04/15/first-maths-in-ml/" data-toggle="tooltip" data-placement="top" title="Mathematics for Machine Learning">Mathematics ... <span class=""></span></a>
+  
+</div>
+
+</div>
+
+<!--<div class="box">-->
+    <!-- google ads code box -->
+<!--</div>-->
+
+
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    
+    
+    var disqus_shortname = 'vipul'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+
+     
+
+          <div class="tile is-child widget">
+
+     
+
+    </div>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">  
+    <p>
+        Few Rights Reserved.
+      
+        Made with <i class="fa fa-heart"></i> and <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>. Hosted on <a href="https://github.com/" target="_blank">Github</a>
+      </p>
+      <p>
+        <a class="icon" href="https://github.com/vgaurav3011" target="_blank">
+          <i class="fa fa-github" title="Github"></i>
+        </a>
+        <a class="icon" href="https://in.linkedin.com/in/vipul-gaurav" target="_blank">
+          <i class="fa fa-linkedin" title="Linkedin"></i>
+        </a>
+        <a class="icon" href="mailto:vgaurav3011@gmail.com" target="_blank">
+          <i class="fa fa-envelope" title="Email"></i>
+        </a>
+      </p>
+  </div>
+</div>
+</footer>
+
+<!-- js -->
+<script src="/assets/js/custom.js"></script>
+<script src="/assets/js/typewriter.js"></script>
+</body>
+</html>

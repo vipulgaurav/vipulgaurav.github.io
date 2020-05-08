@@ -1,0 +1,1253 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+        <title>theCreativeDecoder(&quot;Rise and Shine @MyBlog&quot;)</title>
+        <description>theCreativeDecoder(&quot;Rise and Shine @MyBlog&quot;) - Vipul Gaurav</description>
+        <link>https://vipulgaurav.github.io</link>
+        <atom:link href="https://vipulgaurav.github.io/rss.xml" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Fri, 08 May 2020 05:48:52 +0530</lastBuildDate>
+        <pubDate>Fri, 08 May 2020 05:48:52 +0530</pubDate>
+        <ttl>60</ttl>
+
+
+        <item>
+                <title>Object Oriented Programming using Python</title>
+                <description>&lt;h1 id=&quot;object-oriented-programming-using-python&quot;&gt;Object Oriented Programming using Python&lt;/h1&gt;
+
+&lt;h3 id=&quot;classes-and-objects&quot;&gt;Classes and Objects&lt;/h3&gt;
+&lt;p&gt;Let us start with a simple idea. Close your eyes. Imagine something!
+If you can identify what you imagined clearly then it is an object otherwise it is a class!
+Let us say that we imagined a picture of the phone. Now what phone was it? What were its features? We can say that a phone had the following features:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Color&lt;/li&gt;
+  &lt;li&gt;Model&lt;/li&gt;
+  &lt;li&gt;Brand&lt;/li&gt;
+  &lt;li&gt;Screen Size&lt;/li&gt;
+  &lt;li&gt;Operating System
+And the phone had the following behavioural properties:&lt;/li&gt;
+  &lt;li&gt;Switch on&lt;/li&gt;
+  &lt;li&gt;Switch off&lt;/li&gt;
+  &lt;li&gt;Call&lt;/li&gt;
+  &lt;li&gt;Browse
+Now, let us answer the questions one by one about what you imagined in the exercise!!
+If I say that the phone I imagined was say white in colour, model X, brand Apple, with a screen size of say 6 inches, and an iOS operating system, I can easily identify it as iPhone X. While, if I am not able to answer any one of these features clearly, then it cannot be said to be a specific phone like iPhone. Thus, in this paradigm, iPhone X is an object and the phone is a class. Hence, an object can be simply defined as a real-time entity with properties and behaviour which belongs to a blueprint called class.
+&lt;img src=&quot;https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fdavidphelan%2Ffiles%2F2017%2F09%2FIMG_2869-copy.jpg&quot; alt=&quot;alt-text&quot; /&gt;
+&lt;img src=&quot;https://image.slidesharecdn.com/objectorientedprogramming-151026072156-lva1-app6892/95/object-oriented-programming-4-638.jpg?cb=1446267724&quot; alt=&quot;alt-text&quot; /&gt;&lt;br /&gt;
+Similarly, we can imagine a class of Car as well!&lt;br /&gt;
+&lt;img src=&quot;https://www.miltonmarketing.com/wp-content/uploads/2018/04/oopconceptimage15345345.png&quot; alt=&quot;alt-text&quot; /&gt;
+It has the features of fuel, maximum speed, number of gears etc. and a simple behaviour of refuel, get fuel, set speed and drive! So, if we instantiate it to say Hyundai i10 then that instance is an object whose properties can be described by the class Car. Hence, a class is a concept to enable users to make their own data-type and gives more power to the programmer! SUDO (A programming paradigm for cheers ;) )!
+Let us give a formal definition to class and object then!
+    &lt;blockquote&gt;
+      &lt;p&gt;Class: A user-defined blueprint or prototype of which objects are composed of, it represents the features, properties and behaviour common to all objects belonging to that paradigm.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Object: It refers to any real world entity which exhibits the following properties:
+State: Representation of attributes describing the object
+Behaviour: Representation of methods of an object
+Identity: Each object is assigned a unique name&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In general, we practice a programming paradigm called procedural programming. In procedural programming, a program is divided into smaller parts called methods. These methods are the basic entities used to construct a program. One of the main advantages of procedural programming is code reusability. However, the implementation of a complex real-world scenario becomes a difficult task unwieldy.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The basic idea of OOP is to divide a sophisticated program into a bunch of objects talking to each other.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The concepts of objects and classes allow us to create complex applications in Python. This is why classes and objects are considered the basic building blocks behind all OOP’s principles.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;They are also instrumental for compartmentalizing code. Different components can become separate classes which would interact through interfaces. These ready-made components will also be available for use in future applications.&lt;/li&gt;
+  &lt;li&gt;The use of classes makes it easier to maintain the different parts of an application since it is easier to make changes in classes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let us dive into a little bit of hands-on:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;firstClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;firstClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;I could have given a run option here, but left it intentional because it is highly encouraged that you learn to setup your Python Environment on local computer by simply searching the installation instruction steps as a self-assessment work out of interest.
+So, as you can see it is a simple syntax compared to other programming languages, and Python makes it simpler to learn object oriented approach due to its inherent modularity.
+Say we want to implement the following class (borrowed from Medium):
+&lt;img src=&quot;https://miro.medium.com/max/810/1*xiYI_rl-_pX_27BAjxBL3g.png&quot; alt=&quot;alt-text&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Health&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Name&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Type&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Health&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Health&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;attack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Health&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Health&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.01&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Health&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Health&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;dodge&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Health&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;evolve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newName&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Pikachu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Electric&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;101&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Now, we made use of many unknown terms to you which needs to be explained:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Initializers: The initializer is used to initialize an object of a class. It’s a special method that outlines the steps that are performed when an object of a class is created in the program. It’s used to define and assign values to instance variables. 
+The initialization method is similar to other methods but has a pre-defined name, &lt;strong&gt;init&lt;/strong&gt;. The initializer is a special method because it does not have a return type. The first parameter of &lt;strong&gt;init&lt;/strong&gt; is self, which is a way to refer to the object being initialized.
+    &lt;blockquote&gt;
+      &lt;p&gt;The double underscores mean this is a special method that the Python interpreter will treat as a special case. The initializer is automatically called when an object of the class is created.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Class and Instance Variables: The class variables are shared by all instances or objects of the classes. A change in the class variable will change the value of that property in all the objects of the class. The instance variables are unique to each instance or object of the class. A change in the instance variable will change the value of the property in that specific object only. Let us understand their initializations.
+Class variables are initialized outside the initializer and instance variables are defined inside the initializer as follows:
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;pokemonVillians&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+ &lt;span class=&quot;n&quot;&gt;teamName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Rocket'&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+     &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Name&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;p1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pokemonVillians&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;James&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Name:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;Class variables are useful when implementing properties that should be common and accessible to all class objects.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Method Definitions: A method is a group of statements that performs some operations and may or may not return a result. There are three types of methods in Python:
+    &lt;ul&gt;
+      &lt;li&gt;instance methods&lt;/li&gt;
+      &lt;li&gt;class methods&lt;/li&gt;
+      &lt;li&gt;static methods
+We will discuss instance methods as they are the most used in object-oriented paradigm. Methods act as an interface between a program and the properties of a class in the program.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;These methods can either alter the content of the properties or use their values to perform a particular computation. In the aforementioned example, we have the attack(), dodge() and evolve() methods which introduces changes to the properties. Now, there are two important features associated with method declaration in Python.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Return Statement should not have any return type because Python does not support the idea of a data type&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Self argument is a pseudo-variable provides a reference to the calling object, that is the object to which the method or property belongs to. If the user does not mention the self as the first argument, the first parameter will be treated for reference to the object.The self argument only needs to be passed in the method definition and not when the method is called.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Method Overloading in Python does not occur explicitly but rather is an implicit process.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Overloading refers to making a method perform different operations based on the nature of its arguments.
+Let us take an example:&lt;/p&gt;
+  &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Health&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Name&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Type&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Health&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Health&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# Method Overloading
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;attack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fire&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;water&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;electric&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ground&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;psychic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ghost&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fire =&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fire&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;water =&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;water&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;electric =&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;electric&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ground =&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ground&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;psychic =&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;psychic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ghost = &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ghost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Pikachu&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Pikachu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;electric&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Horsea&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Horsea&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;water&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Alakazam&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Alakazam&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;electric&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;psychic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+  &lt;p&gt;So, we can understand that method overloading can take place implicity as well based on the number and nature of arguments (signature of the method) passed into the method during invocation. In the above example, Pikachu.attack() will print only electric attacks, while Alakazam.attack() will print electric as well as psychic attacks in the order. You noticed that we used None in the order of arguments while calling attack() method using the object Pikachu, which is to prevent argument mismatch.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Advantages of Method Overloading:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Overloading saves memory and since it becomes memory efficient, the execution speed increases.&lt;/li&gt;
+  &lt;li&gt;It makes the code cleaner and readable&lt;/li&gt;
+  &lt;li&gt;It allows the implementation of Polymorphism which we will discuss later.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now, let us come to Class and Static Methods.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Class methods are members of the class and hence can be accessed using the class name without creating a class object.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To declare a method as a class method, we use the decorator @classmethod and cls is used to refer to the class just like self is used to refer to the object of the class.
+Similar to instance methods, class methods also have a default argument as ‘cls’.&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;teamName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Team Rocket&quot;&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# class variables
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# creating instance variables
+&lt;/span&gt;    &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;classmethod&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getTeamName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cls&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;teamName&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getTeamName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Now, we come to static methods.
+Static methods are methods that are usually limited to class only and not their objects. They have no direct relation to the class variables or instance variables. They are used as utility functions inside the class or when we do not want the inherited classes.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Static methods can be accessed using the class name or the object name.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Let us try them out now! To declare a method as a static method, we use the decorator @staticmethod. It does not use a reference to the object or class, so we do not have to use self or cls. We can pass as many arguments as we want and use this method to perform any function without interfering with the instance or class variables.&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;teamName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Team Rocket'&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# class variables
+&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# creating instance variables
+&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;staticmethod&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;trap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Yo! You are trapped in the static made by Team Rocket.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;n&quot;&gt;Pikachu&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'lol, noob, Thunderbolt!'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Pikachu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;trap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Pikachu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;trap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;If we execute this, we will get the message “Yo! You are trapped in the static made by Team Rocket.” twice because the static methods do not change class attributes and leave them as it is.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The purpose of static methods is to make use of its own parameters for useful results.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Now, we come to the concept of Access Modifiers.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Access modifiers are tags we can associate with each member to define which parts of the program can access it directly.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Public attributes are those that be can be accessed inside the class and outside the class.&lt;/li&gt;
+  &lt;li&gt;Private attributes cannot be accessed directly from outside the class but can be accessed from inside the class.&lt;/li&gt;
+  &lt;li&gt;Protected properties and methods in other languages can be accessed by classes and their subclasses. Python does not have a hard rule for accessing properties and methods, so it does not have the protected access modifier.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let us try to understand each of these concepts with an example.
+By default, all methods in Python are made publicly available. In order to make it private, we need to have it explicitly done by specifying the keyword private along with the declaration.&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;types&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;# all properties are public
+&lt;/span&gt;        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;types&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;types&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;displayName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Name:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;n&quot;&gt;Pikachu&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Pikachu&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;electric&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Pikachu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;displayName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Pikachu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;types&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Here, when Pikachu object calls the method displayName and can also access the attribute ‘types’ since they are public so we will get an output here.
+Now, let us try making some things interesting by using the declaration ‘private’. We can make members private using the double underscore __ prefix.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;types&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__types&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;types&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# types is a private property
+&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;Pikachu&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Pikachu&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;electric&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Name:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pikachu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Type:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pikachu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__types&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# this will cause an error
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;In this, you will get the following error message&lt;/p&gt;
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;Traceback (most recent call last):
+&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;  File &quot;main.py&quot;, line 9, in &amp;lt;module&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;    print(&quot;Type:&quot;, Pikachu.__types)  #&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;this will cause an error
+&lt;span class=&quot;go&quot;&gt;AttributeError: 'Pokemon' object has no attribute '__types'
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;In the above example, name is a public property but types is a private property, so it cannot be accessed outside the class.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;When it is tried to be accessed outside the class, the following error is generated:
+‘Pokemon’ object has no attribute ‘__types’&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To ensure that no one from the outside knows about this private property, the error does not reveal the identity of it.
+But, we can still access the private members if absolutely necessary by using _&lt;Classname&gt;&lt;/Classname&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;types&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__types&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;types&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# types is a private property
+&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Pikachu&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Pikachu&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;electric&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Name:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pikachu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Type:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pikachu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_Pokemon__types&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# this will not cause an error
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;data-abstraction&quot;&gt;Data Abstraction&lt;/h3&gt;
+&lt;p&gt;Why we need to hide information? What is the need of it? Let us try to first understand why is it important to hide information with an example.
+Consider your college library managed by a librarian and the following class can be used to define the library:&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+   
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bookID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;username&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;password&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;# all properties are public
+&lt;/span&gt;        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bookID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bookID&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__username&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;username&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__password&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;password&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;issueBook&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ID: &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bookID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;returnBook&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ID: &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bookID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;login&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Enter username and password&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+
+&lt;span class=&quot;n&quot;&gt;l1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2500&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Python 3 by O'Reilly&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Librarian&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Password&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;l1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;issueBook&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;l1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;returnBook&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;l1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;login&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We observe that the login() method does not need access to book name and book ID at all for use but still has access to them. Hence, this can be a potential data leak and we need to implement a concept where the methods can access only those arguments which they actually need for carrying out their execution.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Data Hiding refers to the concept of hiding the inner workings of a class and simply providing an interface through which the outside world can interact with the class without knowing what’s going on inside.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The purpose is to implement classes in such a way that the instances (objects) of these classes should not be able to cause any unauthorized access or change in the original contents of a class. One class does not need to know anything about the underlying algorithms of another class. However, the two can still communicate. It can be implemented with the idea of Data Abstraction and Data Encapsulation.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Data Encapsulation in OOP refers to binding the data and the methods to manipulate that data together in a single unit, that is, class.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It is a good practice to implement the class members or attributes as private in case of implementing encapsulation. These members can be accessed by public methods of the same class and hence, we can use the attributes without knowing their details. The methods used for this are called as “getters” and “setters”.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A getter method allows reading a property’s value.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A setter method allows modifying a property’s value.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Let us implement this in code:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# defining initializer
+&lt;/span&gt;        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setPokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getPokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;n&quot;&gt;Electric&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Unknown'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Before setting:'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Electric&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getPokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Electric&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setPokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Pikachu'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'After setting:'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Electric&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getPokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Output is as expected that before setting we get Unknown and after setting we get Pikachu!&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;Before setting: Unknown
+After setting: Pikachu
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;So, we made a class Pokemon where we defined a private property, named __name, which the main code cannot access. Also, note that we have started the name of this private property with __.
+For this property to interact with any external environment, we have to use the get and set functions. The get function, getPokemon(), returns the value of __name and the setPokemon(x) sets the value of __name equal to the parameter x passed.&lt;/p&gt;
+
+&lt;p&gt;However, there is a brief difference between these two ideas as follows (Credits: GeeksforGeeks)- &lt;br /&gt;
+&lt;img src=&quot;https://practice.geeksforgeeks.org/ckeditor/images/uploads/1493169109_geeks_3.png&quot; alt=&quot;alt-text&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, we come to the next principle of OOPs which is Inheritance.&lt;/p&gt;
+
+&lt;h3 id=&quot;inheritance&quot;&gt;Inheritance&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Inheritance is a concept to implement reusability of a class by providing a new way to create classes from existing classes.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The new class created is called the Child Class and the class from which it inherits all “non-private” variables and methods is called the Parent Class.&lt;/p&gt;
+
+&lt;p&gt;Inheritance is a ‘is-a’ relationship that is for example:
+&lt;img src=&quot;https://raw.githubusercontent.com/vgaurav3011/7-Days-of-OOPs/master/Vipul/Day%202/inheritance.png&quot; alt=&quot;alt-text&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We can say that electric type pokemon ‘is-a’ Pokemon, but not all Pokemon are ‘electricPokemon’.
+Hence, the inheritance relationship can exist in former case but not the latter.
+In Python, the parent of all the classes is the Object Class, the real OG of Object Oriented Programming.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;types&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;health&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;types&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;types&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;health&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;health&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getPokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Name:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Type:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;types&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Health:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;health&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;electricPokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;types&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;health&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;# calling the constructor from parent class
+&lt;/span&gt;        &lt;span class=&quot;n&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;types&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;health&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attack&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attack&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getElectricPokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getPokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Attack:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;waterPokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;types&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;health&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;# calling the constructor from parent class
+&lt;/span&gt;        &lt;span class=&quot;n&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;types&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;health&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attack&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attack&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getWaterPokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getPokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Attack:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;firePokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;types&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;health&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;# calling the constructor from parent class
+&lt;/span&gt;        &lt;span class=&quot;n&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;types&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;health&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attack&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attack&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getFirePokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getPokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Attack:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;n&quot;&gt;p1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;electricPokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Pikachu&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Electric&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;200 HP&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Thunderbolt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;p1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getElectricPokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;p2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;waterPokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Oshawott&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Water&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;350 HP&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Shell Blast&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;p2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getWaterPokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;p3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;firePokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Cyndaquil&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Fire&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;400 HP&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Flamethrower&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;p3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getFirePokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Hence, we get the output:&lt;/p&gt;
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;Name: Pikachu
+Type: Electric
+Health: 200 HP
+Attack: Thunderbolt
+Name: Oshawott
+Type: Water
+Health: 350 HP
+Attack: Shell Blast
+Name: Cyndaquil
+Type: Fire
+Health: 400 HP
+Attack: Flamethrower
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;In the code above, we have defined a parent class, Pokemon, and multiple child classes, electricPokemon, waterPokemon and firePokemon.&lt;/li&gt;
+  &lt;li&gt;Car inherits all the properties and methods of the Vehicle class and can access and modify them.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;super() Function: The use of super() comes into play when we implement inheritance. It is used in a child class to refer to the parent class without explicitly naming it. It makes the code more manageable, and there is no need to know the name of the parent class to access its attributes.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Health&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;90&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;electricPokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Health&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Health from Pokemon:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Health&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Health from electric Pokemon:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Health&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;electricPokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Hence, we get the expected output:&lt;/p&gt;
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;Health from Pokemon: 90
+Health from electric Pokemon: 50
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;super() is also used with the methods. Whenever a parent class and the immediate child class have any methods with the same name, we use super() to access the methods from the parent class inside the child class.&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# defining the parent class
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# defining diplay method in the parent class
+&lt;/span&gt;        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;I am from the Pokemon Kanto Originals&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Johto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Pokemon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# defining the child class
+&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# defining diplay method in the parent class
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;nb&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;I am from the Johto Region Pokemon&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Johto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# creating a car object
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;And we get:&lt;/p&gt;
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;I am from the Pokemon Kanto Originals
+I am from the Johto Region Pokemon
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Based on the child-parent relationship, there are five types of inheritance:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Single Inheritance: In single inheritance, there is only a single class extending from another class. We can take the example of the Pokemon class, as the parent class, and the electricPokemon class, as the child class.&lt;/li&gt;
+  &lt;li&gt;Multilevel Inheritance: When a class is derived from a class which itself is derived from another class, it’s called Multilevel Inheritance. We can extend the classes to as many levels as we want to.&lt;/li&gt;
+  &lt;li&gt;Hierarchial Inheritance: When more than one class inherits from the same class, it’s referred to as hierarchical inheritance. In hierarchical inheritance, more than one class extends, as per the requirement of the design, from the same base class. The common attributes of these child classes are implemented inside the base class.&lt;/li&gt;
+  &lt;li&gt;Multiple Inheritance: When a class is derived from more than one base class, i.e., when a class has more than one immediate parent class, it is called Multiple Inheritance.&lt;/li&gt;
+  &lt;li&gt;Hybrid Inheritance: A type of inheritance which is a combination of Multiple and Multi-level inheritance is called hybrid inheritance.
+&lt;img src=&quot;https://static.javatpoint.com/tutorial/typescript/images/typescript-classes-types-of-inheritance.png&quot; alt=&quot;alt-text&quot; /&gt;
+Note: Java does not allow all types of inheritance, this is exclusive to Python and some other languages.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Advantages of Inheritance:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Code Reusability&lt;/li&gt;
+  &lt;li&gt;Code Modification becomes easy and more localized and you do not have to manually make changes in every class working with common attributes in case of changes.&lt;/li&gt;
+  &lt;li&gt;Extensibility: Using inheritance, one can extend the base class as per the requirements of the derived class. It provides an easy way to upgrade or enhance specific parts of a product without changing the core attributes. An existing class can act as a base class from which a new class with upgraded features can be derived.&lt;/li&gt;
+  &lt;li&gt;It is used to effectively implement Data Hiding.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Coming to the next principle of OOPs now!&lt;/p&gt;
+
+&lt;h3 id=&quot;polymorphism&quot;&gt;Polymorphism&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;The word Polymorphism is a combination of two Greek words, Poly meaning many and Morph meaning forms.
+Polymorphism refers to the same object exhibiting different forms and behaviors.
+For example, take the Shape Class. The exact shape you choose can be anything. It can be a rectangle, a circle, a polygon or a diamond. So, these are all shapes, but their properties are different. This is called Polymorphism.
+Consider the following example of class Shape, which can be used to draw a Circle, a Rectangle and even a Square but with the common method of draw() extended from the parent class Shape.
+&lt;img src=&quot;https://cdn.askpython.com/wp-content/uploads/2019/12/Polymorphism-in-Python.png&quot; alt=&quot;alt-text&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In effect, polymorphism cuts down the work of the developer. When the time comes to create more specific subclasses with certain unique attributes and behaviors, the developer can alter the code in the particular portions where the responses differ. All other pieces of the code can be left untouched.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Rectangle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;# initializer
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;height&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;height&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sides&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;# method to calculate Area
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getArea&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Circle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# initializer
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sides&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;# method to calculate Area
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getArea&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;3.142&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;n&quot;&gt;shapes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Rectangle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Circle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Sides of a rectangle are&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shapes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sides&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Area of rectangle is:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shapes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getArea&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Here, we get:&lt;/p&gt;
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;Sides of a rectangle are 4
+Area of rectangle is: 750
+Sides of a circle are 0
+Area of circle is: 1256.8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;The getArea() method has the same name but different implementations for distinct corresponding classes and gives the output accordingly. Thus, we implemented polymorphism.&lt;/p&gt;
+
+&lt;p&gt;We can also make use of inheritance to achieve polymorphism. For that, we will learn a new concept called method overriding.
+Consider the same code but with inheritance:&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# initializing sides of all shapes to 0
+&lt;/span&gt;        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sides&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getArea&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Rectangle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# derived form Shape class
+&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# initializer
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;height&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;height&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sides&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;# method to calculate Area
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getArea&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Circle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# derived form Shape class
+&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# initializer
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;# method to calculate Area
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getArea&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;3.142&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;shapes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Rectangle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Circle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Sides of a rectangle are&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shapes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sides&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Area of rectangle is:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shapes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getArea&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Method overriding is the process of redefining a parent class’s method in a subclass.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;We over-ridden the getArea() method in the aforementioned example.&lt;/p&gt;
+
+&lt;p&gt;Advantages of Method Overriding:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;The derived classes can give their own specific implementations to inherited methods without modifying the parent class methods.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;For any method, a child class can use the implementation in the parent class or make its own implementation.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Method Overriding needs inheritance and there should be at least one derived class to implement it.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The method in the derived classes usually have a different implementation from one another.
+&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Method_overriding_in_subclass.svg/1200px-Method_overriding_in_subclass.svg.png&quot; alt=&quot;alt-text&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Next, we will also learn about overloading operators in Python.
+Operators in Python can be overloaded to operate in a certain user-defined way. Whenever an operator is used in Python, its corresponding method is invoked to perform its predefined function. For example, when the + operator is called, it invokes the special function, &lt;strong&gt;add&lt;/strong&gt;, in Python, but this operator acts differently for different data types. For example, the + operator adds the numbers when it is used between two int data types and merges two strings when it used between string data types.&lt;/p&gt;
+
+&lt;p&gt;The last concept used for implementing polymorphism is Duck Typing. We say that if an object quacks like a duck, swims like a duck, eats like a duck or in short, acts like a duck, that object is a duck.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Dynamic typing means we can change the type of an object later in the code.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Duck typing extends the concept of dynamic typing in Python. &lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# type of x is an integer
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Pokemon&quot;&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# type x is now string
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;
+Hence, Python allows dynamic changing of type during coding.
+Let us try this out!
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pikachu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Voice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Pika Pika&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Bulbasaur&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Voice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Bulba Bulba&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Charizard&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Sound&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;flame&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Voice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+
+&lt;span class=&quot;n&quot;&gt;sound&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Charizard&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;grass&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Bulbasaur&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;electric&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pikachu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;sound&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Sound&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;grass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sound&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Sound&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;electric&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+The voice is determined when the method is called, so it does not matter which object type you are passing as a parameter in the Sound() method, what matters is that the Voice() method should be defined in all the classes whose objects are passed in the Sound() method. So, we get:
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Bulba&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Bulba&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Pika&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pika&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Duck typing is useful as it simplifies the code and the user can implement the functions without worrying about the data type. But this may not be the case all the time. The user might not follow the instructions to implement the necessary steps for duck typing. To cater to this issue, Python introduced the concept of Abstract Base Classes, or ABC. &lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Abstract base classes define a set of methods and properties that a class must implement in order to be considered a duck-type instance of that class.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# Shape is a child class of ABC
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;area&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;perimeter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Square&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;length&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;area&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;perimeter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;square&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Square&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the example above, you can see that an instance of Shape can be created even though an object from this class cannot stand on its own. Square class, which is the child class of Shape, actually implements the methods, area() and perimeter(), of the Shape class. Shape class should provide a blueprint for its child classes to implement methods in it. To prevent the user from making a Shape class object, we use abstract base classes.&lt;/p&gt;
+
+&lt;p&gt;To define an abstract base class, we use the abc module. The abstract base class is inherited from the built-in ABC class. We have to use the decorator @abstractmethod above the method that we want to declare as an abstract method.
+Now, we will learn about the relationship between objects themseleves.&lt;/p&gt;
+
+&lt;h3 id=&quot;aggregation-and-composition&quot;&gt;Aggregation and Composition&lt;/h3&gt;
+&lt;p&gt;Classes have three different types of relationships. These includes ‘is-a’, ‘has-a’ and ‘part-of’ relatiobships. We already revisited the ‘is-a’ relationship in form of inheritance.
+We define the ‘Part-Of’ relationship now:
+In this relationship, one class object is a component of another class object. Given two classes, class A and class B, they are in a part-of relation if a class A object is a part of class B object, or vice-versa.&lt;/p&gt;
+
+&lt;p&gt;An instance of the component class can only be created inside the main class. In the example to the right, class B and class C have their own implementations, but their objects are only created once a class A object is created. Hence, part-of is a dependent relationship.&lt;/p&gt;
+
+&lt;p&gt;Now, we define the ‘Has-a’ relationship:
+This is a slightly less concrete relationship between two classes. Class A and class B have a has-a relationship if one or both need the other’s object to perform an operation, but both class objects can exist independently of each other.&lt;/p&gt;
+
+&lt;p&gt;This implies that a class has-a reference to an object of the other class but does not decide the lifetime of the other class’s referenced object.
+These are formally called Aggregation and Composition.
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vgaurav3011/vgaurav3011.github.io/master/images/asso.png?token=AHIGNHXMUWIC6MN47HGLDBC6UGSHE&quot; alt=&quot;alt-text&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Let us try to see this in code: &lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Car&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;printDetails&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Model:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Color:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SmallEngine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Car has started.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;stop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Car has stopped.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Small&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Car&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;nb&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;engine&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SmallEngine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setStart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;engine&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setStop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;engine&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+
+&lt;span class=&quot;n&quot;&gt;car1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Small&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Maruti&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Blue&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;car1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setStart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;car1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;printDetails&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;car1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setStop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Output:
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;Car has started.
+Model: Maruti
+Color: Blue
+Car has stopped.
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Hence, we come to the conclusion of all the basic object oriented principles. This later transforms to object oriented designing used in the industry. Thus, now, you can write efficient code and also make sure to be a real SUDO user!&lt;/p&gt;
+</description>
+                <link>https://vipulgaurav.github.io/2020/04/16/oops/</link>
+                <guid>https://vipulgaurav.github.io/2020/04/16/oops</guid>
+                <pubDate>Thu, 16 Apr 2020 00:00:00 +0530</pubDate>
+        </item>
+
+        <item>
+                <title>Mathematics for Machine Learning</title>
+                <description>&lt;h1 id=&quot;mathematics-for-machine-learning&quot;&gt;Mathematics for Machine Learning&lt;/h1&gt;
+&lt;p&gt;Data Science is unimaginable without the essence of mathematics and with the onset of a high number of pre-built libraries, there is a huge misconception among the beginner or aspiring data scientists regarding the need of mathematics in the field of data science. Without a basic understanding of mathematics, data scientists will fail to realise the useful patterns in data and the reasoning behind mining information from them. It is essential to revisit the fundamentals in order to excel in learning data science. Here is a brief intuitive overview of what we will learn today:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Linear Algebra&lt;/li&gt;
+  &lt;li&gt;Multivariate Calculus&lt;/li&gt;
+  &lt;li&gt;Probability&lt;/li&gt;
+  &lt;li&gt;Statistics&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Let us begin with the basic aspects of linear algebra.&lt;/p&gt;
+&lt;h3 id=&quot;linear-algebra&quot;&gt;Linear Algebra&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Matrices Act. They just don’t sit there.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Vector Space: A vector space V is a set (the elements of which are called vectors) on which two operations can happen: Vectors can be added together or vectors can be multiplied by a real number (called scalar). The number of vectors used to define a vector space is called its Dimension.&lt;/p&gt;
+
+&lt;p&gt;Let us begin with the basic definition of Scalars and Vectors.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Scalar:Real number values in the field used to define a vector space.&lt;/li&gt;
+  &lt;li&gt;Vector: It is fundamentally defined as a list of numbers in Computer Science, or as a scalar quantity with direction in Physics and we define it as a grey area or combination of both these definitions in Mathematics.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Vector Operations:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Vector Addition: The process of adding two vectors as per the following laws:
+&lt;img src=&quot;https://www.onlinemathlearning.com/image-files/xadd-vectors.png.pagespeed.ic.oXon4PhQcs.png&quot; alt=&quot;alt-text&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Vector Multiplication: The process of multiplying vectors with another scalar or another vector.
+&lt;img src=&quot;https://www.onlinemathlearning.com/image-files/multiplication-vector1.jpg&quot; alt=&quot;alt-text&quot; /&gt;
+We also come across the multiplication of two vectors in form of dot product and cross product.
+&lt;img src=&quot;https://infyinfo.files.wordpress.com/2018/01/vector1.png?w=556&amp;amp;h=300&quot; alt=&quot;alt-text&quot; /&gt;
+Projection: It is the shadow of a vector on another vector in the vector space. To understand what is a projection we need to understand what is meant by a linear map. 
+A linear map is a function T : V → W, where V and W are vector spaces, that satisfies
+(i) T(x + y) = Tx + Ty for all x, y ∈ V
+(ii) T(αx) = αTx for all x ∈ V, α ∈ R
+Any linear map P that satisfies P^2 = P is called a projection
+&lt;img src=&quot;https://mathonline.wdfiles.com/local--files/vector-projections/Screen%20Shot%202014-12-14%20at%2012.42.18%20PM.png&quot; alt=&quot;alt-text&quot; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Now we come down to matrices!
+Matrix, in simple words, is a rectangular array of symbols, expressions and numbers. They are used to convert vectors to arrays (or rather represent vectors in form of arrays (An array as we all know is a collection of homogeneous elements in an ordered fashion)). They make operations easier to use with computers.
+Some of the matrix operations are:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Matrix Addition: The matrices to be added must be of the same order(order represents number of rows x number of columns).
+&lt;img src=&quot;https://codeforwin.org/ezoimgfmt/secureservercdn.net/160.153.138.219/b79.d22.myftpupload.com/wp-content/uploads/2015/07/matrix-addition.png?ezimgfmt=rs:392x204/rscb1&quot; alt=&quot;alt-text&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Matrix Subtraction: Subtract the corresponding elements of the matrices which have the same order.
+&lt;img src=&quot;https://codeforwin.org/ezoimgfmt/secureservercdn.net/160.153.138.219/b79.d22.myftpupload.com/wp-content/uploads/2015/07/matrix-subtraction.png?ezimgfmt=rs:392x195/rscb1&quot; alt=&quot;alt-text&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Matrix Multiplication: It is done as follows:
+&lt;img src=&quot;https://miro.medium.com/max/3688/1*D_1tbv_wNFJ-rrremAGX4Q.png&quot; alt=&quot;alt-text&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Transpose: It refers to just flipping the dimension of the matrices ie interchange the number of rows with the number of columns.
+&lt;img src=&quot;https://i1.faceprep.in/Companies-1/transpose-of-a-matrix-in-python.png&quot; alt=&quot;alt-text&quot; /&gt;
+We also make use of determinant of a matrix.
+Determinant:
+    &lt;ul&gt;
+      &lt;li&gt;Gives a scalar value of any matrix&lt;/li&gt;
+      &lt;li&gt;It gives the product of eigen values of the matrix&lt;/li&gt;
+      &lt;li&gt;Provides the senstivity of the dataset
+It has some interesting properties:
+&lt;img src=&quot;https://s3-ap-southeast-1.amazonaws.com/mpt15awshkbkt1/resources_conversion_files/presentation_ppt_1515407969_328731-34.jpg&quot; alt=&quot;alt-text&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;There are different types of matrices as well:
+&lt;img src=&quot;https://ars.els-cdn.com/content/image/3-s2.0-B9780080448947013415-gr1.gif&quot; alt=&quot;alt-text&quot; /&gt;
+Identity Matrix is a special matrix with the following properties:
+&lt;img src=&quot;https://study.com/cimages/multimages/16/matrix_summary_3.png&quot; alt=&quot;alt-text&quot; /&gt;
+Inverse of a matrix is defined as the matrix A which when multiplied with another matrix B generates the identity matrix I. A simple method used to find the inverse is the Gaussian Elimination method in two forms row echelon or column order.
+&lt;img src=&quot;https://i.pinimg.com/originals/9d/20/7a/9d207aaae38b8f93b02effb5d54f1149.jpg&quot; alt=&quot;alt-text&quot; /&gt;
+Try out the following example by yourself:
+&lt;img src=&quot;https://i.stack.imgur.com/P91bC.jpg&quot; alt=&quot;alt-text&quot; /&gt;
+There are many other methods to compute inverse of a matrix. Check out this: 
+&lt;a href=&quot;https://www.mathsisfun.com/algebra/matrix-inverse.html&quot;&gt;Link&lt;/a&gt;&lt;br /&gt;
+Eigen Vectors: A vector which does not change its direction even if the transformation is applied to them is called an eigen vector and the value generated by it is called the eigen value.
+They are the most sensitive part of the data analysis process and is an important feature because it gives the same amount of information in a dataset even if multiplied a constant to yield a new projection.
+&lt;img src=&quot;https://slideplayer.com/slide/3422346/12/images/2/6.1+Definitions.jpg&quot; alt=&quot;alt-text&quot; /&gt;
+&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Eigenvalue_equation.svg/250px-Eigenvalue_equation.svg.png&quot; alt=&quot;alt-text&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Another important topic for machine learning is Singular Value Decomposition (SVD) which is:
+&lt;img src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVoAAACSCAMAAAAzQ/IpAAABKVBMVEX///+R2rkAcbz92J0AAAD//vwAb7vy+vaf38Hu9vv3/P791ZWM2LYAZbctgMP926XD6tiFstn+6ckAa7r/4KMAdcOW4b/fvoqL0bEAJ0JIPi12sZYAXJjl5eUKDw4AIzs6WEqLi4s1NTSWlpaFyKoAYqPNzc3y8vKmjmf/46XQsoH305l8fHzqyJGxsLFSRjO4nXIAVIwvRzxfX18AQWxci3YAER2ioqLc3Nyeh2IBaKzGxsYCT4PTtIOMeFdxqpBJbl1gUjsARnQcHBxPd2V1ZEkFMlMvKB1NTU1ZWVlmmoMpPTRsbGy7u7tah3McKySRfFoiHRVGRkYACRBAYVIAFyc5OTkUHxo9NCZtXUSQut0jIyMqJRshNTMfISVBTENlXVBiRDsKGBs98Hm9AAAR00lEQVR4nO3deWPayJIAcI5K9r3Z+63UEpfwIS7JAoG5T4M5bLCNHUwMaye7O9//Q2y1QBgnQhLHxJlM10yQ3cj+45ei1N3qVjweFixYsGDBgoVD/NN/HDR++89Dxn//9uEfB40PP5T2Xw4Zf/v7v/7XAePffvvwz4eMf//BtN4DBtL6DhcfKa3/gMFoGS2jZbSM9qegTRyeltDwkgPS8jTw1VFw4xk/nvb2EuA5vvwGamYrvAX/FPe4iSVtCDAuRGi5RZRlJ1r6GwM8dJxseYj9LLTpS0SrmaQ1EzRRe3va1Xa0I1mWRW9LXOTvIo3xxbvKZbJsWhxIt7BqIIv3vqWdxKrVqi9cNfJ3mcZrByNbjbyexIwW48/yjPehTUCEHuLgKd+Wrj2lhCdxdh1PRyIlT7p8epX2eCLH5+mtaXMGzZ3XK14ctYYywUOBkGGomxuSAmao2PUaTV4iP2LTcJS7E0khd4FnFkK5kPx41CJvaYvGax1p84F6NszjoePjs+FOtMPXaaLmfbF+tM4jbazO+6r4ZrjfR+ZwIJDl34O29nlxhPIt3JQ8EEnAafwG4vFnzw2UapD2XJZqV8db03pFzFjwinDXykFLhELo6JHkYNiC1t0FIYUjr4RNRySETeO7UO5x6M0dhQogy5Ab0san0DdZW6UJGI3xk364D3V+mg/3o3weOuFiJxvgfeHpx0k9W+wgbTbK+2ITX7aYzULYB9nwJPYetOmbxfE5fnuCh8vI6TEepHjkxHODX5XOMG3LcWlbWhiNxiGv5KWMXmgVjrBAgJi7Q1QswYQ8yWbTkBBRJt0hCY0JfRfbiAghoyS8qbXR6DSMtOjG89F6dor1YRLL93keYaHKBzBVY/RdpEXpWJGfZKvVfL+KtZd/l4KAakZg1p5R2sQNLbLn8QRmbcmg/XR9fH25fUGgNBK5GOJnfty6GOcwZOpYOCK5VuiJLJueRKPeYq0dPuJPyCP5CQ+tMXS/qbVFo5BGY/U8Hvr1ejEQjUZjefwuHOD7HR98rBb7+egr7Uf8y4gG+ny2CPn3uYzhRx7j9LNnQbvI2stXWloxIrALLVlkLQobNYCIJFcwaFu5xwLp0iaZjNB+mbVoSgqPBi0mbq5Lvqm1C1rqRrOWJm+VX9LGip0+j//z4emClg8XsauwvIz5oka/4ofTluGsjMU14UlTWlprS+VziCcuPeeU9iYC8fJnadvO11Ph7q5l1NqCfGTUWrn7ZNISANF4pzsmWHvl0SMpjFpYa+Uh1lqJeGVsxHPfFoROp1M3am0+hrXWN81XO+AzaFE5io7ZSSxcjKJoFcvrtOirF8OxST0G4Wo0+y5Z60kcX51jx8ATp+l7SnsIN/Hz8odTT7pmNN5en8dPPaXyNrTyBcbQ28UOAPYQsA5gP6CLXQC8NLWwKLSMrsEFNnlJ6ChXwJ+4eBS93dxjiIiYrWbjOm0fo8N3qtg16Nf7db6aD/SrfBbRYpiTYST21aN9/DqPrfhFHrsP/UCWvvbr71MQvo0IJm/ictcB2rejMdm4jMmrfq3ZozU7tKsDWevXrhotRmO+Kn7s+WJsrUPrW3Vjl/+tDm97vu9O67k6OZNqzqfZ05oh5sYX0t2uA16rOQS+P8kvr0tbxvvTesrx3ScVvpueIaGQvPNUguX0DB/LxpxnEn5O2n2CzXz9eNpFXTUP+9Mu8tbFRNg7056eGYebtNlgVoQrd/0CZ1rSOqJzW+Tu0WwRl290bSrxZtpwwBj3dvrfitPe2M9Ee27M0dTgzJQ9WX5xHDkUbQHo3JYXnszUzYUWHYPhcBfa7GJ2EYrLBOaj4cVUV7b+k9Fen5mvcdqBreGQIREplzwRTxkTOOIeeDPtiA62huMxdmgLQ3wZF2SvLBZkWcTBmFcMbUkbnSJkPYpjtGqd9m2LnZgv5qvTmUc6F2M1Z/sutNe3QKcXcTx28/n48jRxBdfx9MnJdQLKtxIOcw9Ae9cdhbxkPHzyDqWL3IhcwKgrPo1zw4uuCDIZF6xydzNtPR8I01SdYP72A1NfH6J5H0wD9TweYnzUasb8fWjL17d0uuAM0xSJPQmJ3mbANy7LnrOz67TjL3BDOzwisiRKWGRFkmuRUYjIECLkokta47sjy6pgR5sN8NWJDz4a1SDLT7EgQJintTZc7ASsqsI70dY+eS4jt2eeEjw/w4eElPCkrxe0HuncvawN7YUXvBcFpA1JT08wJKMW0uIbSIspLFr+lA1t32dMIMDHWHFSLNYXtFXjMsbnwfJn3oc27pHSdO4rAQnM2g80a03asnSyxQjChpY83j2JsuSFFiG5V9q7LvGOpda2Wdvn+51iFX2RlY++ofVNp5bXsnehvYp7TuHWoI14jpEWygmDVip7oFz6dBjaENCS4JWGpIVZmyvIIqUtdMljV7ZOW1vaGODH3qANQx2ra9Wk7eerUP1ZaM/jngjWAKMgwBlmaQlub2kdOIkcY6/hyn2x3dxDwOSk5XWMBQGOHockJI3EJ/rGXUgixLrY2vQQ8HM/zfK+iS8GeAWrI/R0QduJTbG/a1Vsf+XR2HJeazEr5l3e2yVrd3Dd0y7mt8zbuLxxMG/i8htGab8q7U7B5hAYLaNltIyW0TJaRstoGS2jZbSMltG6oI1EIvvtXsBfsOnvy6AVQy3r+Ve3YSwpf6WtxjatoXcZsXBsjVYTFHUvUkUQVEvaNFx9Ot1HNvHp/PLZhlaE8Wi0zw4R8jga0cVMC1q+D4FieB/Z8HQKfd6kbcCs3dyLNhgcgCXt8c0+rosogy0t2W65wfe2hIxDK9pAfavlBhbB87HoilZ44ThuL1r8+QfNktYqZRNpFysOXteBRmxpJUtY0XKTzVvS1X1dcrRGa5my2WzVCbyefU3cNdq2FazacCZ9PYULCm5pa/AZjp1kS6/7nbanJeToi1MqkxCYtk60McAPuf1Gp+pkOpm6peXmQadM5hQQtqdNQA217BcnR67g6x60rS9gfdf2NcQjADOzHWj5aYDn6xt3iBkRwPJK/7ihVWaQcaBVe7ALbYluwyld2dOmS5M9aEPD/8k5Ze3d0DVtBz/r/MQubWNgvFRd0TaSPUfair4L7TldPFPbxGVGfJ+C4CX/60hLZLe0i9V0YNNvwJz2rW19XKe1QkxVnGj9nLAL7bUr2rW9pZFLN7RyaBniZlrZDOMbe9rYMpaZGA1slsW8nmxDyznT+neiPaY3xtOb+qpWtCcbznlLa4YLWtEFbdWMhWzURhYxNxaEH0obp6u6PjuNI2pfV1+6o337af8/p8uYURCIy4IQm/Qd+l6A3eF81OIyZkmbbKf+EFrPzXPtxrHUnsKtua5ue1qx9fn3kEPPVi5AQXZHG4Z+NTzNfv/GK34d6p1VNXag1fTMpaI5yFYgadpuQes5fb5xmFeITL6e/G4u/9qalgwn4y8Th/0iX79++fq76IaW7xcnMCna0fr47HSx6NYFrTLLZGYV25KgZoKZ4GwH2i1jh4KwXTiPxpxjvWA4FYQtYxOt47DrF6Fdjx9Ee2aJwmgZ7V+FtlxLryIeYbQHpP02GC2j/flpI7VaaRm1GisILGsZ7Z+P9q8yGvur0BI3m8pfz3Ck5Tc/O/HNWW5pXd3lXZ2yDW3p+fncYbto4uZ5Ne+4Na34OB7Z7HNeel64v6MbKPY/OsK+7oV2ohXas0zDCVfNmEtDtqAtQbx847AV95NUrkF6R9oxffJc195WvICVPnl8XeJhQftx0s9GLXeLrsvWoe+SVoN7pQm6vayWgR1oz+gtx2f7eZtSHM873o02RHfjtsB2vpbACFabHu2zlu/QB6rZ3RqjJ+UnE7e0OnD+VHNmm7YNGOxCm6CTtddOU2LlNJR3o/XKhq/9VLjofRq6ozWeicb3ne4zrJ3hWBCQSx/YZ62q7UJrwIHDApo4gHl3bJceAjnK2cpiPLnMWnpzBlM36kQbcE1L4+Xeodi6p60tY7G04xYstotGzHOWpGfXO9Nu3D6+C22RZm3+u2JbzYazdSOy2ZgjrZ7UF2GAqcGghaauLMK4cyPslrUlK9k3cUtflpe6HWiPxqJj78stLd+nD1acOj2BeQOt5cIkbdD2O/UQdisIx1gN4rYFIU4XLqWXFWH7ztfTIyFDe1jiPmtj9BGKltvH12Xd03INSKZUhx4CJ4Cpv00PAS4/XYH96tAz+ATmurBtaUWAL0eSQw/hcQyQc3dHl+9AEcL2ScvXpwDR+vLvwmFhEl5GBrBKSuucbT/AoLc1bSROw2HMUI6vHlu3NW1oWCgULB/d8xp0nY25nNx5HYLzGtAqLbru1nxpSjKZ1O3XgapJeo497SGmZ+xXhVssXSbbLGf+Zulydsely7z5oEqer6/RzqwGtW4GuqtzOG5gTQvHx7f7uCaOTz/ZLafzSjnjicA7B7m7e1xbcB+ATn6vzQzVfJQ+8WNJq0Hv3n7JgVMkK3OwpMUO1e22D517G7X0xjXkBq3carn+Bxkso9Uahl4fshrLZrMOVywH2sUvMLeJNCq6so+sX9GTxi94j81Ne25lWP2CP2hz0wEmFf3vRXuo+NPtG2O0jJbRMlpGy2gZLaNltIz2PWgdti9YhLA2O8ZobWgftrUNQpLRuqIFjY5Zzfks+j/9mlu9LBv8y1kvTp+tb4FitLa0WkXPzFUFc5G7F/yVTE/ghKQeVPV2W8ePfy9TWZyZbM8VTskMegKjdUerNqCHfhrQyUZ/ry3ooDVgrjeg0RhoGuhCu0fTtRcUFFC0ZlDXGK1r2hRFbeupSk8FQdDmFQFSnAAK1oBmTxMELBr0DD+nzFL6nBUE97QDjt6pVWbcg6BBJhjMJBsPHHWEHtceBIPBNtI2jIU14Nff3PxhtPa0LwYtJyWDHOZmKqX5Ka2qpdSZft9MpVK0uK6yltG6ptWoI6WtgI4VdaYkQWgA52+ArrzoGlSUXnBRaxUdFI7RuqatqFoFU/Re9atNlXau2rSHUKELE7CHgOjN9qKHgO/MBRR/s1SB0drQLju15h+zS7v6au1Gr8UdX0ZrQ7tfMFpGy2h/CVqOxt43zRnt97TCYDYb3HOSw9JERrs9rTJr0NXIFToaeJ32Wjt808TdN7m353CMdgNtxpgKaGBXVr8XBBzJ6pUG5xdU/V7h6ON9VIU20dVHavK+wQnzua5yjYqO/V9FqwjYiJ1cRmtJa2QdCNysnQxCkmu3k4NmqjfoVUBpYoYqM6PpnlOleUVK6rNZz38PlR6oAgx6yqCXBIXRWtHSlco4bAVBz6Q4v6TrOJhVwd+bp1KVniapXBubjAX2vWaK0/RU5T5FR8Op+54GQkqlf1hBsKRVgqqmqf6Z0MTBLDpWHjKZzEOjV+Hoo9Qyuir5Ky/YJAkvxsw3rbX6nKPXPw1Sfi4JsySjtabFZEWooFBpIlRQr/SMS9OSVm8nm6llU0bnFrQpOq/IKUENsCHlF4L3HKO1oh3Q/UpcUNBAVyuga6CoyoO/d09pOf+DJPjpO9ikg6DeZ1LJjKYOkqrwoFNaLAr+Zo/RWtEKbYwK1xS4RvDhfq5jNr4EG9x9kvYYkJdmbIM24feDh7nmV+czVW2/DJKchnWB02eDucoKghXtajSGVyh/6oVuD1ktL+BWk1zq4lt1Nfelvt7+NRoZrQXtKrBvFWxvHm/ZB6O1o1X13u6jXUZrR7vXxgZGa0/7VngraEbrhrbRM5Zu6M3VBuflUU9a/wCjdUurg7FL70Fa0nLzxdYybjF0YLR70BoPVFZmLyr9h5mwXzajVzdOMJchWW6MZrSuaHtBhc4mSKoCmYc2N4eHuR/aD5VkE8deXG/OaHen1ed09QyompBKBZXUTEn5Icn5k82UPlNeWNbuQauCP9lLIW1bGgSTKVoQ6OrbZJPjeiBY/hCjdUeb6iVnAgf+YJPzZ5BWWdH626BYXssYrTtariEF6WLEByWlQjJFZxMXtKlk+/V5Pox2e9o5x9HSCqoOs4d2hcODQVtpCqBxzQyj3ZV2ffWXYCz0UlX/624G60d8MFpXtLsEo2W0jJbR/iq0Hw8Yf3baQwaj/QPj778dMjyeDweN99ZhwYIFCxYs9o3/BxVAEVxRdRykAAAAAElFTkSuQmCC&quot; alt=&quot;alt-text&quot; /&gt;
+In mathematical terms,
+&lt;img src=&quot;https://miro.medium.com/max/3546/1*qZoUV7mgLyqGOC-SG6IW5Q@2x.jpeg&quot; alt=&quot;alt-text&quot; /&gt;
+There are many other concepts in linear algebra which are not covered here as we want to keep it short and crisp but feel free to explore more. You can also watch the videos by Gilbert Strang MIT Opencourseware for a detailed in-depth understanding.
+Applications of Linear Algebra:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;It is used in the concept of Principal Component Analysis&lt;/li&gt;
+  &lt;li&gt;Used in working with and applying transformations to pixel data (or images)&lt;/li&gt;
+  &lt;li&gt;It is used for encoding on dataset&lt;/li&gt;
+  &lt;li&gt;It is also used in Singular Value Decomposition which forms the basis for PCA&lt;/li&gt;
+  &lt;li&gt;Latent Semantic Analysis and Optimization Problems
+    &lt;h3 id=&quot;multivariate-calculus&quot;&gt;Multivariate Calculus&lt;/h3&gt;
+    &lt;p&gt;Calculus helps in optimization problems and we make use of differentiation more than integration in case of relevance to machine learning.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Differentiation essentially is used to break down the function for in-depth analysis and has varied applications from computing gradients to forming the basis for backpropagation (optimization algorithm used in neural networks).&lt;/p&gt;
+
+&lt;p&gt;Calculus helps us to find the sensitivity of the information obtained and how it changes when a change is subjected to one of its parameters.
+There are three types of differentiation as well with relevance to machine learning libraries:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Symbolic Differentiation: It manipulates mathematical expressions. We know the derivative and use various rules (product rule, chain rule) to calculate the resulting derivative. Then they simplify the end expression to obtain the resulting expression. For example,
+&lt;img src=&quot;https://i.stack.imgur.com/XZgZL.png&quot; alt=&quot;alt-text&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Numerical Differentiation: It is a method of finite difference approximation in which we make use of the values of functions and its knowledge to compute derivatives.
+&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Derivative.svg/1200px-Derivative.svg.png&quot; alt=&quot;alt-text&quot; /&gt;
+A simple two-point estimation is to compute the slope of a nearby secant line through the points (x, f(x)) and (x + h, f(x + h)). Choosing a small number h, h represents a small change in x, and it can be either positive or negative. The slope of this line is given by:
+&lt;img src=&quot;https://i.stack.imgur.com/ZUwpC.png&quot; alt=&quot;alt-text&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Automatic Differentiation: It is a set of techniques to numerically evaluate the derivative of a function specified by a computer program. AD exploits the fact that every computer program, no matter how complicated, executes a sequence of elementary arithmetic operations (addition, subtraction, multiplication, division, etc.) and elementary functions (exp, log, sin, cos, etc.). By applying the chain rule repeatedly to these operations, derivatives of arbitrary order can be computed automatically, accurately to working precision, and using at most a small constant factor more arithmetic operations than the original program.
+&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/3/3c/AutomaticDifferentiationNutshell.png&quot; alt=&quot;alt-text&quot; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Symbolic differentiation can lead to inefficient code and faces the difficulty of converting a computer program into a single expression, while numerical differentiation can introduce round-off errors in the discretization process and cancellation.&lt;/p&gt;
+
+&lt;p&gt;Both classical methods have problems with calculating higher derivatives, where complexity and errors increase. Finally, both classical methods are slow at computing partial derivatives of a function with respect to many inputs, as is needed for gradient-based optimization algorithms. Automatic differentiation solves all of these problems, at the expense of introducing more software dependencies.&lt;/p&gt;
+
+&lt;p&gt;Optimization is about finding extrema, which depending on the application could be minima or
+maxima. When defining extrema, it is necessary to consider the set of inputs over which we’re
+optimizing. This set X ⊆ R^d is called the feasible set.&lt;/p&gt;
+
+&lt;p&gt;If X is the entire domain of the function being optimized (as it often will be for our purposes), we say that the problem is unconstrained. Otherwise the problem is constrained and may be much harder to solve, depending on the nature of the feasible set.
+&lt;img src=&quot;https://www.mathsisfun.com/algebra/images/function-max-global.svg&quot; alt=&quot;alt-text&quot; /&gt;
+Some basic rules of differentiation are:
+&lt;img src=&quot;https://cdn.kastatic.org/googleusercontent/WHHUFnfmlmlx8qy6UahnLbZkTU2Q3kJAI_P5my24E09kEO-uZ-678-rXfxIdIUqXgAynrYnC00aECarGoWYJSJHk&quot; alt=&quot;alt-text&quot; /&gt;
+We also have a need of the concept of Partial Differentiation. It has the following significance and features:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;It deals with more than a single variable which is needed in machine learning problems&lt;/li&gt;
+  &lt;li&gt;It changes one variable leaving the other constant which is a need in many applications&lt;/li&gt;
+  &lt;li&gt;Used as an optimization problem solution&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It deals with the concept of chain rule:
+&lt;img src=&quot;https://i.ytimg.com/vi/XipB_uEexF0/maxresdefault.jpg&quot; alt=&quot;alt-text&quot; /&gt;
+Now what exactly is this used in machine learning?
+The answer is simple: Gradients!!
+Gradients are nothing but vectors! Its components consist of the partial derivatives of a function and it points in the direction of the greatest rate of increase of the function.&lt;/p&gt;
+
+&lt;p&gt;So for example, if you have the function f(x1,…xn), its gradient would consist of n partial derivatives and would represent the vector field.
+We use gradients in optimization algorithms such as the very famous Gradient Descent used as part of backpropagation algorithm in neural networks.
+We also have the concept of Jacobians and Hessian Matrices.
+Jacobian Matrix is nothing but the matrix of first order partial derivatives of the gradients.
+&lt;img src=&quot;https://jamesmccaffrey.files.wordpress.com/2017/08/thejacobianequations2.jpg?w=300&amp;amp;h=178&quot; alt=&quot;alt-text&quot; /&gt;
+Hessian is the matrix of second order partial derivatives.
+&lt;img src=&quot;https://mathworld.wolfram.com/images/equations/Hessian/NumberedEquation1.gif&quot; alt=&quot;alt-text&quot; /&gt;
+The Hessian is used in some optimization algorithms such as Newton’s method. It is expensive to
+calculate but can drastically reduce the number of iterations needed to converge to a local minimum by providing information about the curvature of f.&lt;/p&gt;
+
+&lt;p&gt;Also, there is a concept of Convexity.
+Convexity is a term that pertains to both sets and functions. For functions, there are different
+degrees of convexity, and how convex a function is tells us a lot about its minima: do they exist, are they unique, how quickly can we find them using optimization algorithms, etc.
+&lt;img src=&quot;https://plus.maths.org/content/sites/plus.maths.org/files/news/2011/convexity/convex.jpg&quot; alt=&quot;alt-text&quot; /&gt;
+We observe that the nature of minima depends on whether the feasible set is convex or not by nature. If we visualize a convex function:
+&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Grafico_3d_x2%2Bxy%2By2.png/300px-Grafico_3d_x2%2Bxy%2By2.png&quot; alt=&quot;alt-text&quot; /&gt;
+Hence, we define a function as convex if:&lt;/p&gt;
+
+&lt;p&gt;f(x,y) = f(tx + (1 − t)y) ≤ tf(x) + (1 − t)f(y)&lt;/p&gt;
+
+&lt;p&gt;If the inequality holds strictly (i.e. &amp;lt; rather than ≤) for all t ∈ (0, 1) and x 6= y, then we say that f is strictly convex.
+There are two important properties here to think on:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;If f is convex, then any local minimum of f in X is also a global minimum.&lt;/li&gt;
+  &lt;li&gt;If f is strictly convex, then there exists at most one local minimum of f in X . Consequently, if it exists it is the unique global minimum of f in X.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Next we will jump on to the concept of probability.&lt;/p&gt;
+
+&lt;h3 id=&quot;probability&quot;&gt;Probability&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.mathsisfun.com/data/images/probability-line.svg&quot; alt=&quot;alt-text&quot; /&gt;
+The simplest way to define probability is as the ratio of the number of favourable outcomes to the total number of outcomes.
+A few terms important with relevance to probability are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Random Experiment: An experiment or a process whose outcome cannot be predicted with certainty.&lt;/li&gt;
+  &lt;li&gt;Sample Space: The entire possible set of outcomes of a random experiment is the sample space S of that experiment.&lt;/li&gt;
+  &lt;li&gt;Events: One or more outcomes of an experiment represented as the subset of S is called an event E. These are of the following types:
+    &lt;ol&gt;
+      &lt;li&gt;Joint Events: They have some outcomes in common with each other.&lt;/li&gt;
+      &lt;li&gt;Disjoint Events: They do not have any common outcomes at all with each other.
+&lt;img src=&quot;https://a8h2w5y7.rocketcdn.me/wp-content/uploads/2016/02/disjoint-events.png&quot; alt=&quot;alt-text&quot; /&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Probability Density Function: The equation describing a continous probability distribution is called a probability density function. It has the following features:
+    &lt;ol&gt;
+      &lt;li&gt;The graph of a probability density function will be continous over a range of values.&lt;/li&gt;
+      &lt;li&gt;The area bounded by the curve is 1 bound by the x-axis.&lt;/li&gt;
+      &lt;li&gt;The probability that a random variable assumes a value between a and b is equal to the area bounded by the curve between a and b.
+&lt;img src=&quot;https://undergroundmathematics.org/calculus-of-powers/r9357/images/enclosed-area.png&quot; alt=&quot;alt-text&quot; /&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Normal Distribution: It associates the probability of a random variable x with a cumulative probability y.
+&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Normal_Distribution_PDF.svg/340px-Normal_Distribution_PDF.svg.png&quot; alt=&quot;alt-text&quot; /&gt;
+The formula for the probability in normal distribution is given by:
+&lt;img src=&quot;https://miro.medium.com/max/3180/1*Hl187KkimHPDmMtChYSQBA.png&quot; alt=&quot;alt-text&quot; /&gt;
+Central Limit Theorem: It states that the sampling distribution of the mean of any independent, random variable will be normal or early normal distribution with a large sample size.
+&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/IllustrationCentralTheorem.png/400px-IllustrationCentralTheorem.png&quot; alt=&quot;alt-text&quot; /&gt;
+Now, we come to the concept of marginal probability. It refers to the occurence of a single event. 
+&lt;img src=&quot;https://i0.wp.com/www.statistics-made-easy.com/wp-content/uploads/2016/08/marginal-probability.png?resize=467%2C242&quot; alt=&quot;alt-text&quot; /&gt;
+Conditional Probability refers to the idea that an event will occur based on whether another event has occured or not. These have two different types of events associated with them:
+&lt;img src=&quot;https://www.onlinemathlearning.com/image-files/xindependent-dependent-events.png.pagespeed.ic.vHRlR7Hea6.png&quot; alt=&quot;alt-text&quot; /&gt;
+Then, we have the Bayes Theorem which gives the relationship between the conditional probability and its inverse.
+&lt;img src=&quot;https://betterexplained.com/topics/Bayes_Theorem.png&quot; alt=&quot;alt-text&quot; /&gt;
+This is used in the famous Naive Bayes Algorithm Approach.
+&lt;img src=&quot;https://www.researchgate.net/publication/285368726/figure/fig1/AS:393446461329408@1470816354068/mplementation-of-Naive-Bayes-algorithm-on-the-patient-data.png&quot; alt=&quot;alt-text&quot; /&gt;
+There are many other facets of probability interlinked with statistics which we explore in the next section.&lt;/p&gt;
+&lt;h3 id=&quot;statistics&quot;&gt;Statistics&lt;/h3&gt;
+&lt;p&gt;The area of mathematics concerned with data collection, analysis interpretation, and presentation.
+Population: A collection or set of individuals or objects or events whose properties have to be analysed.
+Sample: A subset of population is called as sample. A well chosen sample will contain most of the information about the population.
+Some important sampling techniques are:
+&lt;img src=&quot;https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2019/05/Screenshot-20.png&quot; alt=&quot;alt-text&quot; /&gt;
+I specifically liked the videos and explanations of these concepts on the Khan Academy and am borrowing their examples and definitions.
+Let us go over them one by one.&lt;/p&gt;
+
+&lt;p&gt;Convenience sample: The researcher chooses a sample that is readily available in some non-random way.
+Example—A researcher polls people as they walk by on the street.
+Why it’s probably biased: The location and time of day and other factors may produce a biased sample of people.&lt;/p&gt;
+
+&lt;p&gt;Simple random sample: Every member and set of members has an equal chance of being included in the sample. 
+Example—A teachers puts students’ names in a hat and chooses without looking to get a sample of students.
+Why it’s good: Random samples are usually fairly representative since they don’t favor certain members.&lt;/p&gt;
+
+&lt;p&gt;Stratified random sample: The population is first split into groups. The overall sample consists of some members from every group. The members from each group are chosen randomly.
+Example—A student council surveys 100100100 students by getting random samples of 252525 freshmen, 252525 sophomores, 252525 juniors, and 252525 seniors.
+Why it’s good: A stratified sample guarantees that members from each group will be represented in the sample, so this sampling method is good when we want some members from every group.&lt;/p&gt;
+
+&lt;p&gt;Cluster random sample: The population is first split into groups. The overall sample consists of every member from some of the groups. The groups are selected at random.
+Example—An airline company wants to survey its customers one day, so they randomly select 555 flights that day and survey every passenger on those flights.
+Why it’s good: A cluster sample gets every member from some of the groups, so it’s good when each group reflects the population as a whole.&lt;/p&gt;
+
+&lt;p&gt;Systematic random sample: Members of the population are put in some order. A starting point is selected at random, and every nth student to analyse.
+Example—A principal takes an alphabetized list of student names and picks a random starting point. He picks every 20th student to analyse.&lt;/p&gt;
+
+&lt;p&gt;Even in statistics, we have two distinct paradigms: Inferential and Descriptive. What we have done till now is inferential by nature.
+&lt;img src=&quot;https://www.whatissixsigma.net/wp-content/uploads/2014/03/Basic-Statistics-Descriptive-Statistics.png&quot; alt=&quot;alt-text&quot; /&gt;
+Descriptive Statistics has two major:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Measures of Central Tendency&lt;/li&gt;
+  &lt;li&gt;Measures of Variability Spread&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;A measure of central tendency is a summary statistic that represents the center point or typical value of a dataset. These measures indicate where most values in a distribution fall and are also referred to as the central location of a distribution.
+&lt;img src=&quot;https://media.proprofs.com/images/discuss/user_images/153336/9973678110.jpg&quot; alt=&quot;alt-text&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The calculation of the mean incorporates all values in the data. If you change any value, the mean changes. However, the mean doesn’t always locate the center of the data accurately. It works well only in a continous distribution and fails to converg in case of a skewed distribution. This problem occurs because outliers have a substantial impact on the mean. Extreme values in an extended tail pull the mean away from the center.&lt;/p&gt;
+
+&lt;p&gt;As the distribution becomes more skewed, the mean is drawn further away from the center. Consequently, it’s best to use the mean as a measure of the central tendency when you have a symmetric distribution.&lt;/p&gt;
+
+&lt;p&gt;The median is the middle value. It is the value that splits the dataset in half. To find the median, order your data from smallest to largest, and then find the data point that has an equal amount of values above it and below it. The method for locating the median varies slightly depending on whether your dataset has an even or odd number of values. Outliers and skewed data have a smaller effect on the median.&lt;/p&gt;
+
+&lt;p&gt;The mode is the value that occurs the most frequently in your data set. On a bar chart, the mode is the highest bar. If the data have multiple values that are tied for occurring the most frequently, you have a multimodal distribution. If no value repeats, the data do not have a mode.
+Typically, you use the mode with categorical, ordinal, and discrete data.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://qph.fs.quoracdn.net/main-qimg-5fc78a3359ad31c9c457dd4825813185.webp&quot; alt=&quot;alt-text&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, we answer the biggest question of when to use which of the measures of central tendency based on the nature of the data:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Symmetric Distribution of Continous Data: Mean, Median, Mode all are equal but analysts prefer the mean more because it consists of all the calculations.&lt;/li&gt;
+  &lt;li&gt;Skewed Distribution of Data: Median is the best measures in this case.&lt;/li&gt;
+  &lt;li&gt;Ordinal Data: Mode or Mean are preffered in this case.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Next up is the concept of Hypothesis Testing:
+A hypothesis test evaluates two mutually exclusive statements about a population to determine which statement is best supported by the sample data. These two statements are called the null hypothesis and the alternative hypothesis.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Null Hypothesis (H0): A statment assumed to be true at the outset of a hypothesis test.&lt;/li&gt;
+  &lt;li&gt;Alternative Hypothesis (HA): A statement for which sufficient evidence is needed to be proved for being true.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Hypothesis testing is a form of inferential statistics that allows us to draw conclusions about an entire population based on a representative sample. 
+The effect is the difference between the population value and the null hypothesis value. The effect is also known as population effect or the difference. For example, the mean difference between the health outcome for a treatment group and a control group is the effect.&lt;/p&gt;
+
+&lt;p&gt;Typically, you do not know the size of the actual effect. However, you can use a hypothesis test to help you determine whether an effect exists and to estimate its size.&lt;/p&gt;
+
+&lt;p&gt;Now, over to measure of dispersion:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Range: It is the difference of the largest and smallest value.
+&lt;img src=&quot;https://www.statisticshowto.com/wp-content/uploads/2018/08/range-statistics.png&quot; alt=&quot;alt-text&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Inter-Quartile Range: It divides the data into four quarters Q1, Q2 and Q3:
+&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Boxplot_vs_PDF.svg/500px-Boxplot_vs_PDF.svg.png&quot; alt=&quot;alt-text&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Variance and Standard Deviation: It is a measure of the spread of the data and measures how much a random variable differs from an expected value.
+&lt;img src=&quot;https://miro.medium.com/max/528/0*9IGq3Z6m_BtadRjI.gif&quot; alt=&quot;alt-text&quot; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Next comes up the concept of Entropy and Information Gain! These are used in Decision Trees and constructing classifiers.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Entropy is the measure of uncertainty in the data. 
+&lt;img src=&quot;https://miro.medium.com/max/528/0*9IGq3Z6m_BtadRjI.gif&quot; alt=&quot;alt-text&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Information Gain is the reduction in entropy or surprise by transforming a dataset and is often used in training decision trees. Information gain is calculated by comparing the entropy of the dataset before and after a transformation.
+&lt;img src=&quot;https://dv-website.s3.amazonaws.com/uploads/2017/11/101317-pic5.png&quot; alt=&quot;alt-text&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There are many other parametrics also involved in statistics and it is imperative for a data scientist to understand the nuances of each concept in statistics in order to be successfull in mining useful patterns in data. Here, we come to an end of the introduction to a brief overview about the mathematics needed for machine learning.&lt;/p&gt;
+</description>
+                <link>https://vipulgaurav.github.io/2020/04/15/first-maths-in-ml/</link>
+                <guid>https://vipulgaurav.github.io/2020/04/15/first-maths-in-ml</guid>
+                <pubDate>Wed, 15 Apr 2020 00:00:00 +0530</pubDate>
+        </item>
+
+        <item>
+                <title>Docker: Using Containers</title>
+                <description>&lt;h1 id=&quot;docker-using-containers-part-2&quot;&gt;Docker: Using Containers (PART 2)&lt;/h1&gt;
+&lt;p&gt;Let us dive right into hands-on coding to use containers in Docker.&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker run hello-world
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;You can skip the sudo if you are running docker as adminstrator.
+You should get the following message if the installation was successfull:
+&lt;img src=&quot;https://raw.githubusercontent.com/vgaurav3011/glugmvit.github.io/master/assets/images/docker/10.png&quot; alt=&quot;alt text&quot; /&gt; &lt;br /&gt;
+Let us see what exactly happend behind the scenes here:&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vgaurav3011/glugmvit.github.io/master/assets/images/docker/11.png&quot; alt=&quot;alt text&quot; /&gt;&lt;br /&gt;
+The following steps took place to display the above output:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Our command instructed the computer to run the docker image called hello-world&lt;/li&gt;
+  &lt;li&gt;The hello-world image was fetched from the Docker Hub&lt;/li&gt;
+  &lt;li&gt;If the image was locally available then it will be fetched from the cache&lt;/li&gt;
+  &lt;li&gt;The computer runs the image on local machine&lt;/li&gt;
+  &lt;li&gt;Stop the container&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;So, the bigger question is where do these images come from??
+When the container image is not present locally then it is fetched from a registry on DockerHub online which is a collection of all the container images. DockerHub is a paid registry which allows unlimited storage and access for public registries and restricted access for premium registeries. It can be accessed on https://hub.docker.com/. You will have to sign up on this website in order to publish any images to the Docker registry. So, before proceeding further go sign up on the above link!
+To access the account through the terminal for uploading images, execute the following command and answer the prompt of login details:&lt;/p&gt;
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker login
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;If we wish to upload an image to the registry, we use the following command:&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker push image-name
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;where image-name will be the title of your container image.
+If we wish to access the various commands or debugging logs we can use the following command:&lt;/p&gt;
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;--help&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Some of the options for docker command manipulations are:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;docker logs: It provides a view to the entire detailed logs of execution and after stopping as well.&lt;/li&gt;
+  &lt;li&gt;docker ps: Lists all the running container images and if used with the option -a it also displays the stopped containers.&lt;/li&gt;
+  &lt;li&gt;docker stop: Used to stop a running container.&lt;/li&gt;
+  &lt;li&gt;docker rm: Deletes a container.&lt;/li&gt;
+  &lt;li&gt;docker inspect: Get details of the container
+Let us try out some of these commands!
+    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker ps
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vgaurav3011/glugmvit.github.io/master/assets/images/docker/docker2.1.png&quot; alt=&quot;alt text&quot; /&gt;&lt;br /&gt;
+We get the list of containers running currently with their dates of creation and unique IDs.&lt;/p&gt;
+    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker ps &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vgaurav3011/glugmvit.github.io/master/assets/images/docker/docker2.2.png&quot; alt=&quot;alt text&quot; /&gt;&lt;br /&gt;
+It displays the stopped containers as well.&lt;/p&gt;
+    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker inspect container-id
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;We use the container id of the nginx image specified in the above illustration.
+When we inspect it we get a detailed log whose small part is illustrated below.
+&lt;img src=&quot;https://raw.githubusercontent.com/vgaurav3011/glugmvit.github.io/master/assets/images/docker/docker2.3.png&quot; alt=&quot;alt text&quot; /&gt;&lt;br /&gt;
+Now, let us talk about the docker run command more in detail.
+The run command is analogous to setting up a new machine with brand new programs for execution. It allows the creation of same image multiple times in different containers as well. This feature makes it useful in executing similar or dissimilar processes in parallel. Say for example, if we run the following commands:&lt;/p&gt;
+    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker run alpine &lt;span class=&quot;nb&quot;&gt;printenv&lt;/span&gt;
+&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker run alpine &lt;span class=&quot;nb&quot;&gt;printenv&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;Alpine is a small package in Linux registry and the run command will fetch it from the Docker Hub initially since it is not available on the local system then it will execute the method printenv present in the package. However, it will assign different hosts with unique IDs to each command even if they are same.
+An alternate to remove stopped containers without specifying their unique ID is to use the following command:&lt;/p&gt;
+    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker container prune &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;It removes any inactive containers and the -f switch is an implicit confirmation to proceed and delete all stopped containers right away, instead of asking to confirm that operation.
+Now, we wish to permanently store data in the containers. Till now whatever information we processed is lost when we stopped the container. Hence, we are going to classify containers based on this:&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Stateful Containers: These containers store the information even after being stopped and retain the contents after its resumption.&lt;/li&gt;
+  &lt;li&gt;Stateless Containers: They lose all the information processed as soon as it stops.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The internet makes use of long lived running containers for network connections called server containers. Let us illustrate it with the following example:&lt;/p&gt;
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker run alpine ping www.docker.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/vgaurav3011/glugmvit.github.io/master/assets/images/docker/1.png&quot; alt=&quot;alt text&quot; /&gt;&lt;br /&gt;
+The ping command will not stop as the server is hosted and continously running in the background and we have to press Ctrl+C to stop the execution of command. If we add -d switch the execution will not display output and only the container is initialized. We can also specify port number explicity to run a server container on a specific network connection as follows:&lt;/p&gt;
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 8085:80 nginx
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This command will run the server named nginx on port number 80 with -d switch indicating that it will run in the background. To check it out you can visit http://localhost:8085 :&lt;br /&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/vgaurav3011/glugmvit.github.io/master/assets/images/docker/4.png&quot; alt=&quot;alt-text&quot; /&gt;&lt;br /&gt;
+If you get the above message it successfully executed!
+The best part about this is that containers isolate all the processes within itself and will not affect or be affected by the processes occuring on the local machine. It ensures that each software deployed through a container meets its own requirements without affecting the specifications of the rest of the system.
+Let us try running a Jenkins server as a wrap up for this post.&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 8088:8080 jenkins
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;We will get the following processing command at http://localhost:8088 :&lt;br /&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/vgaurav3011/glugmvit.github.io/master/assets/images/docker/5.png&quot; alt=&quot;alt-text&quot; /&gt;&lt;br /&gt;
+Once you sign up and login then:&lt;br /&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/vgaurav3011/glugmvit.github.io/master/assets/images/docker/6.png&quot; alt=&quot;alt text&quot; /&gt;&lt;br /&gt;
+We can now continously integrate server and make changes with the localhost within the container without affecting any external processes. In the next post, we will try learn to create and publish our own docker images! Cheers!&lt;/p&gt;
+</description>
+                <link>https://vipulgaurav.github.io/2020/03/27/docker2/</link>
+                <guid>https://vipulgaurav.github.io/2020/03/27/docker2</guid>
+                <pubDate>Fri, 27 Mar 2020 00:00:00 +0530</pubDate>
+        </item>
+
+        <item>
+                <title>Docker: A Brief Introduction</title>
+                <description>&lt;h1 id=&quot;docker-a-brief-introduction-part-1&quot;&gt;Docker: A Brief Introduction (PART 1)&lt;/h1&gt;
+&lt;h4 id=&quot;docker-is-a-comprehensive-solution-to-parallelism-with-the-aim-of-easing-deployment-of-multiple-applications-with-along-with-their-requirements-through-a-single-platform&quot;&gt;Docker is a comprehensive solution to parallelism with the aim of easing deployment of multiple applications with along with their requirements through a single platform.&lt;/h4&gt;
+&lt;p&gt;Now, that is a heavy definition to begin with but sums up what docker really is and used for!
+In simple words, docker is an engine used to run &lt;strong&gt;containers&lt;/strong&gt;.
+Containers, in real life, are used to store goods and commodities. The special feature of any container is that their contents remain in themselves and are not visible outside. This sounds too obvious but is utilised in implementing &lt;strong&gt;abstraction&lt;/strong&gt; in software deployment.
+The takeaway from any discussion on containers is:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;CONTAINERS IS A SET OF SPECIAL PROCESSES WHICH REMAIN ISOLATED FROM REST OF THE SYSTEM&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So, What goes in, stays in and runs within that !!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.datacenterknowledge.com/sites/datacenterknowledge.com/files/styles/article_featured_retina/public/container-docker.jpg?itok=CuNCRFE9&quot; alt=&quot;alt text&quot; /&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;So, why do we need containers in the first place?&lt;/p&gt;
+
+&lt;p&gt;Development and Deployment is an interconnected chain of Software Engineering.&lt;/p&gt;
+
+&lt;p&gt;The DEV Team focuses on the following:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;FREQUENT DEPLOYMENT OF DEBUGGED CODE&lt;/li&gt;
+  &lt;li&gt;EASE OF ADDING NEW ADD-ONS OR UPDATES&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The OPS Team focuses on the following:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;STABILITY OF THE DEPLOYED APPLICATION&lt;/li&gt;
+  &lt;li&gt;MONITORING AND CONTROL&lt;/li&gt;
+  &lt;li&gt;EASE OF PRODUCTION AND MANAGEMENT OF NEW RELEASES&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;DevOps is the intersection of both these teams and tries to follow an integrated approach to the whole system. Containers make deployment easy. We just have to run our entire application in a single container that can exist independently along with other applications without being affected by other’s requirements.
+&lt;br /&gt;
+&lt;img src=&quot;https://www.brainvire.com/wp-content/uploads/2018/03/devops.png&quot; alt=&quot;alt text&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A typical web application looks like the following:&lt;br /&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/vgaurav3011/glugmvit.github.io/master/assets/images/docker/7.png&quot; alt=&quot;alt-text&quot; /&gt;&lt;br /&gt;
+Now, as you can see, we have different engines, versions of applications running together as a single block. Imagine, if I have one more application having similar architecture:&lt;br /&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/vgaurav3011/glugmvit.github.io/master/assets/images/docker/8.png&quot; alt=&quot;alt-text&quot; /&gt;&lt;br /&gt;
+So, these can run parallel using the same environment! But, what if a new app comes up that needs Wordpress 5.0 and PHP 5.7??
+Thus, we solve this issue of dependency conflict using Docker:&lt;br /&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/vgaurav3011/glugmvit.github.io/master/assets/images/docker/9.png&quot; alt=&quot;alt-text&quot; /&gt;&lt;br /&gt;
+Now my problem of different versions requirements to run an application is solved. Plus, I can scale the application as per my wish which is another bonus as it does not affect other applications and their dependencies at all !!
+Thus, the main advantages of these containers are:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Easy Deployment&lt;/li&gt;
+  &lt;li&gt;Seamless Updates and Upgrades with new releases&lt;/li&gt;
+  &lt;li&gt;Better Scaling up
+All these are provided by Dockers and their products ! Let’s explore them now !
+Let us begin by installing Docker:
+    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;docker
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;Next, we need to check whether our installation was successfull.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker run hello-world
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;You can skip the sudo if you are running docker as adminstrator.
+You should get the following message if the installation was successfull:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Hello from Docker!
+This message shows that your installation appears to be working correctly.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Next, we will learn more on using docker with hands-on in the next post!&lt;/p&gt;
+</description>
+                <link>https://vipulgaurav.github.io/2020/03/20/docker1/</link>
+                <guid>https://vipulgaurav.github.io/2020/03/20/docker1</guid>
+                <pubDate>Fri, 20 Mar 2020 00:00:00 +0530</pubDate>
+        </item>
+
+
+</channel>
+</rss>

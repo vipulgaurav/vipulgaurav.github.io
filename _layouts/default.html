@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+{% include head.html %}
+
+<body>
+
+<section class="hero is-dark">
+  <div class="hero-body">
+    <div class="container">
+        <h1 class="title">
+          <span class="typewrite" data-period="2000" data-type='[ "Konichiwa!", "I am Vipul", "Autodidact Programmer",
+           "I drink and automate things", "Dattebayo!"]'>
+            <span class="wrap"></span>
+          </span>
+        </h1>
+      <h4 class="subtitle" id="quote">
+      </h4>
+    </div>
+  </div>
+</section>
+
+<div class="main-container">
+  <div class="tile is-ancestor is-vertical">
+
+
+    <nav class="nav has-shadow">
+
+      <div class="nav-left">
+
+        <a href="{{"/" | relative_url}}" class="nav-item">
+          <span class="icon">
+            <i class="fa fa-home" aria-hidden="true" title="Homepage"></i>
+          </span>
+        </a>
+
+        <a href="https://github.com/vgaurav3011" target="_blank" class="nav-item">
+          <span class="icon">
+            <i class="fa fa-github" aria-hidden="true" title="Github"></i>
+          </span>
+        </a>
+        <a href="https://vipulgaurav.ml" target="_blank" class="nav-item">
+          <span class="icon">
+            <i class="fa fa-user" aria-hidden="true" title="Portfolio"></i>
+          </span>
+        </a>
+        <a href="https://linkedin.com/in/vipul-gaurav" target="_blank" class="nav-item">
+          <span class="icon">
+            <i class="fa fa-linkedin" aria-hidden="true" title="Linkedin"></i>
+          </span>
+        </a>
+
+        
+      </div>
+
+      <div class="nav-right nav-menu" id='nav-menu'>
+        <a href="{{ "/archive" | relative_url }}" class="nav-item">Archive</a>
+        <a href="{{ "/tags" | relative_url }}" class="nav-item">Tags</a>
+      </div>
+
+      
+    </nav>
+
+    <div class="tile is-parent">
+
+        {{ content }}
+
+
+     
+
+          <div class="tile is-child widget">
+
+     
+
+    </div>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">  
+    <p>
+        Few Rights Reserved.
+      
+        Made with <i class="fa fa-heart"></i> and <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>. Hosted on <a href="https://github.com/" target="_blank">Github</a>
+      </p>
+      <p>
+        <a class="icon" href="https://github.com/vgaurav3011" target="_blank">
+          <i class="fa fa-github" title="Github"></i>
+        </a>
+        <a class="icon" href="https://in.linkedin.com/in/vipul-gaurav" target="_blank">
+          <i class="fa fa-linkedin" title="Linkedin"></i>
+        </a>
+        <a class="icon" href="mailto:vgaurav3011@gmail.com" target="_blank">
+          <i class="fa fa-envelope" title="Email"></i>
+        </a>
+      </p>
+  </div>
+</div>
+</footer>
+
+<!-- js -->
+<script src="{{ site.baseurl }}/assets/js/custom.js"></script>
+<script src="{{ site.baseurl }}/assets/js/typewriter.js"></script>
+</body>
+</html>
