@@ -1,22 +1,11 @@
-
 ---
-
 layout: post
-
-title: "Evaluation Metrics for Classification Problems"
-
+title:  "Classification Evaluation Metrics"
 author: vipul
-
 mathjax: true
-
 featured: true
-
-image: assets/images/maths_ml/logo.jpg
-
 tags: [Machine Learning]
-
-excerpt: Evaluation Metrics
-
+excerpt: Classification metrics
 ---
 
 # Classification Evaluation Metrics
