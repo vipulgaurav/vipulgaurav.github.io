@@ -127,3 +127,4 @@ However, it only takes into account the order of probabilities and hence it does
 - ANALYTICSVIDHYA
 - MEDIUM
 - FRITZ AI
+- GOOGLE MACHINE LEARNING CRASH COURSE
