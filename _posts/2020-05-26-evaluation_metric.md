@@ -8,12 +8,18 @@ tags: [Machine Learning]
 excerpt: Classification metrics
 ---
 
+
 # Classification Evaluation Metrics
+
 
 I trained a model and got 99% accuracy on training! Whoopie! That is the general reaction of mostly all beginners when they come across training neural networks, and simple classification tasks. However, from a standard or industrial point of view, getting a high training accuracy is not the end goal rather making an adaptive classification model robust to outliers, and unseen data is the target which is suitable for deployment.
 
-A model's ability is not measured by how well it memorizes training data, rather it is measured by how well it <b>generalizes</b> on test data, or unseen new instances. A model should not memorize features, it would lead to over-fitting on training data and is not an ideal situation. Also, on the contrary, a model should not learn a very few features either that may lead to under-fitting on the data and hence, result in poor performance as well.
+A model's ability is not measured by how well it memorizes training data, rather it is measured by how well it <b>generalizes</b> on test data, or unseen new instances. A model should not memorize features, it would lead to over-fitting on training data and is not an ideal situation. Also, on the contrary, a model should not learn a very few features either that may lead to under-fitting on the data and hence, result in poor performance as well. <br/>
+
+
 ![alt-text](https://raw.githubusercontent.com/vipulgaurav/vipulgaurav.github.io/master/assets/images/evaluation_metrics/mlconcepts_image5.png)
+
+<br/>
 As shown above, a balanced model will be able to fit most of the data points and should be robust to new data points that may be fed to it. The model is _underfitting_ the training data when the model performs poorly on the training data. This is because the model is unable to capture the relationship between the input instances and the target values. The model is _overfitting_ the training data when you see that the model performs well on the training data but does not perform well on the evaluation data. This is because the model is memorizing the data it has seen and is unable to generalize on unseen examples.
 
 We specifically concentrate on evaluating classification tasks in supervised learning problems where we need to assign a label to each data point (or rather to assign the target class Y to each input instance X correctly). This can have the following scenarios:
@@ -59,7 +65,9 @@ There is a trade-off between the precision and recall with the goal of maximizin
 
 Thus, we require a metric that can be used to balance between precision and recall to a good degree. So, we make use of a metric called F1-Score which is the harmonic mean of precision and recall for a classification problem. 
 
+
 ## F1-Score
+
 ```
 F1 Score = (2*Precision*Recall)/(Precision+Recall)
 ```
@@ -77,8 +85,10 @@ It tells you how precise your classifier is (how many instances it classifies co
 High precision but lower recall, gives you an extremely accurate, but it then misses a large number of instances that are difficult to classify. The greater the F1 Score, the better is the performance of our model.
 
 Also, sometimes, we make use of weights attached to precision and recall for tuning purposes.
-It makes it more effective in evaluating a model.
-![alt-text](https://raw.githubusercontent.com/vipulgaurav/vipulgaurav.github.io/master/assets/images/evaluation_metrics/f1.png)
+It makes it more effective in evaluating a model.<br/>
+![alt-text](https://raw.githubusercontent.com/vipulgaurav/vipulgaurav.github.io/master/assets/images/evaluation_metrics/f1.png)<br/>
+
+
 ## ROC Curve
 
 A receiver operating characteristic curve is a graphical plot between the true positive rate (TPR) versus the false positive rate (FPR) as a threshold of being positive on an instance being varied.
@@ -93,7 +103,9 @@ FPR = (False Positives/False Positives+True Negatives)
 
 Hence, the TPR gives us a sense of how sensitive is the data, and the FPR gives us the sense of how often the model classifies incorrectly.
 
+
 ### Steps to Generate ROC Curve
+
 
 - Sort the test predictions according to the confidence that each prediction is positive.
 - Step through the sorted list from high confidence to low
@@ -103,7 +115,9 @@ The goal is obviously to maximize the TPR and minimize the FPR.
 
 ROC Curve is insensitive to changes in class distribution and even if the proportion of positive to negative instances changes in a test set, the ROC curve will not be affected by it. This is called **Class Skew Independence**. This is because the metrics TPR and FPR used for ROC are independent of the class distribution as compared to other metrics like accuracy, precision, etc., which are impacted by imbalanced class distributions. 
 
+
 ## Area under the ROC Curve (AUC)
+
 
 **AUC** measures the entire two-dimensional area underneath the entire ROC curve from (0,0) to (1,1). AUC provides an aggregate measure of performance across all possible classification thresholds. One way of interpreting AUC is as the probability that the model ranks a random positive example more highly than a random negative example.  Higher the AUC value, better is the model. AUC is desirable for the following two reasons:
 
@@ -111,6 +125,7 @@ ROC Curve is insensitive to changes in class distribution and even if the propor
 -   AUC is **classification-threshold-invariant**. It measures the quality of the model's predictions irrespective of what classification threshold is chosen.
 However, it only takes into account the order of probabilities and hence it does not take into account the model’s capability to predict higher probability for samples more likely to be positive. Hence, it is useful to only see how the model is able to distinguish between two classes
 ![alt-text](https://raw.githubusercontent.com/vipulgaurav/vipulgaurav.github.io/master/assets/images/evaluation_metrics/roc_auc_curve.png)
+
 ## ACKNOWLEDGMENTS
 
 - ANALYTICSVIDHYA
