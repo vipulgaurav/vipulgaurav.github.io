@@ -1,1 +1,133 @@
+---
+layout: post
+title:  "Product Management: A Free Guide to Kickstart your Journey!"
+author: vipul
+mathjax: true
+featured: true
+tags: [Product-Management]
+image: assets/images/pm-1.jpg
+excerpt: Kickstart your PM Journey!
+---
+# Product Management: Free Guide to Kickstart your Journey
 
+I come across so many definitions of Product Management ranging from complex ideas to oversimplifications, that for me as a beginner, it was very difficult to understand the true essence and the big picture behind this unique profession. 
+
+The simplest understanding that I came up with is as follows:
+
+Product Managers are matchmakers. They are neither the bride nor the groom but they are the ones who coordinated the marriage between them, convinced their families for the couple, and eventually are even responsible for the success or failure of the marriage.
+
+The analogous version of the aforementioned example is visbile in the enterprise where the job of the product manager is to obtain a deep understanding of the requirements for the customer, gain domain expertise in the business model of their organization and correlate them to find opportunities to solve problems of the customer by marrying them with the solutions offered by the enterprise.
+
+![img](https://raw.githubusercontent.com/vipulgaurav/vipulgaurav.github.io/master/assets/images/PM-1.jpg)
+
+In summary, if I have to give a formal definition for product management it can be as follows:
+
+> Product Management is the scientific art of identifying business opportunities and gaps that can be resolved using the technical stack of an enterprise to provide a holistic solution to the customer.
+
+So, you must be wondering what is the role of a Product Manager?
+
+Well, I will not bug you with the vague answers I got from so many sources where they say that role of product manager varies from industry to industry. I am not challenging the validity of this definition, infact it is true yet a generic way to understand the role of product manager is as follows:
+
+> A Product Manager is the centre of communication responsible to research, priortise and present the solution to the customer, ultimately responsbile for the fate of the product.
+
+You may have came across various definitions telling that a product manager is like a mini-CEO. It is partially true, yet keep in mind that as a product manager, nobody will report to you. You are the omega wolf of your group. 
+
+You are responsible for deciding the features to be developed based on your research and coordinate with cross-functional teams filling the gaps wherever needed and ultimately even monitor the solution post release for success.
+
+Sounds interesting?
+
+Yes, indeed, it is one of the most satisfying roles to come across especially if you are from a technical background who wants to contribute directly to generating revenue of the company without leaving your love for technology.
+
+This does not imply that non-technical people cannot become product management professional, infact anyone with a high IQ can become a brilliant product manager! Now, before you assume that only geniuses are cut to be product managers, let me clear that IQ here stands for your "Interest Quotient".
+
+Yes, it is true! Anyone can become a seasoned product professional, all you need is a genuine interest to research and understand the business. Everyone in this line is a prey of assumption bias and makes mistakes. The only difference between a good and poor performing product manager(s) is that they need to learn from their mistakes and optimise the product in the appropriate direction accordingly.
+
+So, now you are familiar with product management and the role of the product professionals in an enterprise. 
+
+What is the next line of question now? If you are not thinking of a next question, then you need to step back and rethink your decision to pursue product management because the most important aspect of this job is to ask questions.
+
+Everyone argues that it is essential for a product manager to ask the right questions. 
+
+I agree with them yet I will remodify this further and say the most essential job of the product professional is to ask the right questions at the right time!
+
+If you are not asking the correct set of questions at the suitable time then you will not be able to capitalise an open opportunity, hence, even if you ask that question later then it is of no value neither to the customer nor to the enterprise.
+
+Now, that you have taken the resolve to be curious and decided to become a seasoned product manager like none other, you must be wondering what do I need to do in order to achieve this goal?
+
+## Introduction
+
+As you can point out right from the definition for the role of the product manager, communication and research are important aspects to learn for kickstarting your journey into product management.
+
+Almost all of us, who might have thought of product management would have atleast read soemthing about it, attended a meetup, or saw some professional in their network transitioning to this role. That is why, you are here, right?
+
+Everytime when I come across a beginner at a meetup, they usually always have the same old question: 
+### How to start my journey in _____ ?
+Now, I understand that this may reflect curiousity from their side, yet at the same time it also shows the lack of action taken by them to satisfy this curiousity.
+
+Today, the knowledge base to satisfy any curiousity in this world is one click away from your from your favourite search engine. Remember, I told that it is important to ask the right questions at the right time (and sometimes, at the right place as well!)
+
+Thus, if you have not put the efforts of researching an answer to your query then you are asking the wrong questions at the right time and god forsaken, do not do this at the wrong place post a talk by an industry renowned professional. 
+
+It is always good to do your own research and then come up with unique genuine queries that will make both your conversation and life intellectually capable. Every good professional will be easily able to see through whether you are asking a genuine doubt or just asking for the sake of it.
+
+Infact, even though every good blog will tell you to always come up with many questions and queries to gain a clear picture in this profession, I will argue the opposite. It is important to learn "When to Shut Up and Listen"!
+
+If you dominate a conversation with your own stories and ideas, chances are you will end up ignoring and not understanding the perspective of the other person and if that person is a stakeholder then even more of a bigger problem.
+
+> Practice being a Silent Spectator!
+
+Yes, it is important to LISTEN to people and their ideas ranging from everyone including, engineers, business teams, operations, sales, your customers and even third-party opinions that may come from your vendors. 
+
+Communication is not about speaking, infact, that is the biggest trap. It is about listening every perspective and taking all of them into consideration to frame a unique idea that can be a potential solution. 
+
+Again, the emphasis being on the word "potential"! You are not guaranteed to get the right solution in your first attempt, it is exactly like coding, a reiterative process.
+
+Many a times in my daily standup meetings within the organization, I would not even be speaking anything, yet I will be paying undivided attention to the tasks at hand being done by the engineers, understanding the brainstorming they are discussing to overcome support issues and hearing out the perspectives of members from other cross-functional teams if they have joined as well.
+
+I will speak only when necessary and this has two cross benefits as well. Firstly, when I will speak people will definitely hear me out because your value automatically enhances when you break your silence seldom. Secondly, by not interfering into their opinions, I can get an unfiltered view of the insights they can come up with all by themselves and providing this space is essential for betterment of the enterprise. 
+
+If you are a Naruto fan, you will definitely remember the quote by one of my favourite charactes Itachi Uchiha:
+
+> No matter how powerful you become, do not try to shoulder everything alone because then you are bound to fail.
+
+Even if you are not a Naruto fan, the beauty of the quote still stands true for not just product managers but all managers, in general, as well. Your job as a product manager is to make sure that the teams coordinate well with each other and there are no gaps of communication between them.
+
+You should not try to dominate conversations and present your ideas directly to the teams. You should hear them out, let them brainstorm amongst themselves, and I am sure you will definitely get new insights that you might not have considered earlier to enhance your ideation.
+
+Infact, if you dominate their conversations, you may end up introducing a bias into their minds that may lead to them perceiving the problem in the same way as you and this can potentially also lead to not understanding the problem fully which ultimately will lead to a skewed solution and that is not really what you want, right?
+
+Thus, it is important to learn to remain silent and speak up only when it is necessary to realise the true essence of communication. So, now, you may ask is there any way to formally learn this art of communication?
+
+I will answer that question now. Communication is not something you can learn from simply reading books. It is an art that you can learn only when you get your hands dirty with a practical approach. However, I will really recommend reading a very interesting book I came across after winning a hackathon, "What to Say and When to Shut Up" by Rakesh Godhwani.
+
+I stumbled upon this book as a prize from a hackathon and honestly, it was up on my shelf dusted for quite a while before the pandemic. During pandemic, stuck at home, I was bored and started reading it, and I regretted not reading this masterpiece earlier. 
+
+The author focuses on making you learn the true essence of communication and just like data-driven machine learning models (This is my own analogy) that learn around what patterns the data have, he teaches the art of mastering audience-centric or user-driven communication that makes you learn what your audience wants to hear from you. He emphasised on the importance of preparation before a presentation, provided a variety of techniques to truly understand what your audience is expecting out of you and encourages you to become a better communicator and not just an ordinary speaker. It is a must read for all ranging from beginner at communication to seasoned debaters as well.
+
+I am in no way promoting the book, but do encourage readers to go ahead and give it a shot if you want to truly understand the art of communication. Leaving an Amazon link here for your quick reference: [Link](https://www.amazon.in/What-Say-When-Shut-Up/dp/8184006020).
+
+Coming back to our agenda, learning to effectively communicate is a significant aspect in your day-to-day work as a product manager. From a practical example, you may need to present timelines to different stakeholders in a very diplomatic way. Sometimes, when the product is not ready (which is actually many a times), it is your duty to inform the affected due stakeholders about the delay and take ownership. This may sound easy but becomes a huge task if you do not know the correct way to handle such situations.
+
+So, now your immediate question will be where can I learn these skills practically? Some of you may say books and all are not my thing, and I learn by doing things, which is perfectly understandable and infact highly recommended as well to master communication.
+
+The best way to learn communication practically is participate in hackathons. As a student, it is easy to get into some really awesome hackathons and even as a professional, you will be warmly welcomed to attend them for the sake of fun. 
+
+For those unfamiliar with the idea of hackathon, it is basically a cultivated environment where companies and various startups throw a problem statement which they are facing as a challenge to solve. People form teams or come already with their respective team to participate, and try to design a minimal viable product (MVP) solution in an accelerated timeframe which is to be presented before the jury panel in form of a limited time presentation called a pitch.
+
+Not only, you learn about the industry trends and the problems startups and organizations are facing, you get to collaborate with others from varied backgrounds (similar to cross-functional teams within an enterprise) and design a potential solution which is to be evaluated by jury members from different backgrounds (similar to the user and stakeholder feedback process a product manager has to follow in an enterprise).
+
+One important thing to keep in mind while participating in a hackathon is that your win or loss matters! Yes, this is contrary to the opinion of many who would argue you learn at the end of the day even from your losses, agreed but unless you learn to craft that perfect pitch of 2 minutes where you can cover everything in a product resonating and answering all the expectations of your stakeholders, you cannot win anyway!
+
+Remember, there can be many better engineers and designers at these hackathons than you and your team. However, in my experience, I have seen much experienced and even teams with very good product eventually lose out due to poor presentation. You can create a world changing solution, but if you cannot explain it in a summarised two minutes of accelerated fashion, you cannot win a hackathon. Thus, if you do win a hackathon, you would have mastered the art of communication atleast by a fraction if not 100% guaranteed!
+
+Hackathon pitches are all about keeping it short and sweet. In words of the great Dr. Cooper, remember:
+
+![alt-img](https://y.yarn.co/42139f6b-8baf-4e5a-8a93-9c2c2ea0c224_text.gif)
+
+If you go to multiple hackathons, you will get a very good idea about different industry trends and problem statements, and you will end up listening to a lot of people, then present your own unique product, and eventually transform you into a great communicator.
+
+Now, I have also seen many people working in hackathons but not presenting eventually. This is one thing you should highly avoid, no matter how worse your solution might be compared to other teams, if you do not present it, you are not learning anything at all from hackathon. No words minced, you are there just for the T-Shirts & good food! 
+
+However, I am not demonising that, simply I am saying if you truly want to learn from any hackathon, go present and learn. Worse, you will be criticised and probably embarassed which many fear, but I will say again that you will learn much more than the percentage who could not overcome the fear and are in a worse position than you! Thus, select what you want to be, after all decision-making is another important aspect to job of product manager.
+
+Let us park our car about discussing communication here, I will definitely be writing a separate guide about hackathons 101 strategies from my experience of winning over 10 hackathons in my college time, and now let us sail into the other important aspect of product management essential to introduction: Research.
